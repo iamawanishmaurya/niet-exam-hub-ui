@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIET Exam Papers Download - PDF Downloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #cf1419;
+            --secondary-color: #2c3e50;
+            --bg-light: #f8f9fa;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px 0;
+        }
+        
+        .main-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 1400px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .header h1 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .filter-section {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 12px;
+            z-index: 5;
+            border: 1px solid #e9ecef;
+        }
+        
+        .filter-group {
+            margin-bottom: 20px;
+        }
+        
+        .filter-group label {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .form-select {
+            border-radius: 10px;
+            border: 2px solid #dee2e6;
+            padding: 12px 15px;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(207, 20, 25, 0.25);
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            border: none;
+            border-radius: 10px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #a51014;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(207, 20, 25, 0.3);
+        }
+        
+        .btn-secondary {
+            border-radius: 10px;
+            padding: 12px 30px;
+        }
+        
+        .results-section {
+            margin-top: 30px;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--bg-light);
+            border-radius: 10px;
+        }
+        
+        .pdf-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .pdf-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateX(5px);
+        }
+        
+        .pdf-info {
+            flex: 1;
+        }
+        
+        .pdf-title {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .pdf-meta {
+            color: #6c757d;
+            font-size: 0.9em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+        
+        .badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        
+        .badge-year {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .badge-semester {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .badge-branch {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
+        .badge-type {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .btn-download {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-download:hover {
+            background: #a51014;
+            color: white;
+            transform: scale(1.05);
+        }
+        .btn-view {
+            background: #ffffff;
+            color: var(--secondary-color);
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 10px 16px;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-view:hover {
+            background: #f8f9fa;
+            color: var(--secondary-color);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+        
+        .no-results i {
+            font-size: 4em;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary-color), #e74c3c);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .stat-card h3 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        
+        .stat-card p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+        }
+        
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            font-size: 1.1em;
+            transition: all 0.3s;
+        }
+        
+        .search-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(207, 20, 25, 0.25);
+            outline: none;
+        }
+        
+        .search-hint {
+            margin-top: 10px;
+            color: #6c757d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        .badge-code {
+            background: #fce4ec;
+            color: #880e4f;
+        }
+        
+        .pdf-not-found {
+            opacity: 0.6;
+            border-style: dashed;
+        }
+        
+        .pdf-not-found .btn-download {
+            background: #6c757d;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        
+        .btn-group .btn-download {
+            border-radius: 8px 0 0 8px;
+        }
+        
+        .btn-group .dropdown-toggle-split {
+            border-radius: 0 8px 8px 0;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        
+        .dropdown-menu {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        /* Grid view */
+        .results-grid #pdfList {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+        }
+        .results-grid .pdf-card {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .results-grid .pdf-meta {
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="header">
+                <h1><i class="fas fa-graduation-cap"></i> NIET Exam Papers Download</h1>
+                <p>Download exam papers and carry-over papers by selecting your criteria</p>
+            </div>
+            
+            <div class="search-box">
+                <label for="searchInput" style="font-weight: 600; color: var(--secondary-color); margin-bottom: 10px; display: block;">
+                    <i class="fas fa-search"></i> Quick Search
+                </label>
+                <input type="text" 
+                       id="searchInput" 
+                       class="search-input" 
+                       placeholder="Quick search: subject or subject:semester (e.g., 'cyber security', 'dsa:3')"
+                       onkeyup="handleSearchInput(event)">
+                <div class="search-hint">
+                    <strong>Examples:</strong> "dsa:3" | "data structures" | "cyber security"
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="row">
+                    <div class="col-md-3 filter-group">
+                        <label><i class="fas fa-graduation-cap"></i> Course</label>
+                        <select class="form-select" id="courseSelect" onchange="updateSemesterFilter()">
+                            <option value="">All Courses</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 filter-group">
+                        <label><i class="fas fa-book"></i> Semester</label>
+                        <select class="form-select" id="semesterSelect" onchange="updateSubjectFilter()">
+                            <option value="">All Semesters</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 filter-group">
+                        <label><i class="fas fa-book-open"></i> Subject Name</label>
+                        <select class="form-select" id="subjectSelect">
+                            <option value="">All Subjects</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1 filter-group">
+                        <label><i class="fas fa-file-pdf"></i> Type</label>
+                        <select class="form-select" id="typeSelect">
+                            <option value="">All</option>
+                            <option value="exam">Exam</option>
+                            <option value="cop">COP</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary btn-lg" onclick="filterPDFs()">
+                            <i class="fas fa-search"></i> Search Papers
+                        </button>
+                        <button class="btn btn-secondary btn-lg ms-2" onclick="resetFilters()">
+                            <i class="fas fa-redo"></i> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="statsSection" class="stats" style="display: none;">
+                <div class="stat-card">
+                    <h3 id="totalResults">0</h3>
+                    <p>Papers Found</p>
+                </div>
+            </div>
+            
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h4 class="m-0"><i class="fas fa-list"></i> Search Results</h4>
+                    <div class="d-flex align-items-center gap-2">
+                        <button id="toggleViewBtn" class="btn btn-outline-secondary btn-sm" onclick="toggleResultsView()">
+                            <i class="fas fa-grip"></i>
+                        </button>
+                        <button id="downloadAllBtn" class="btn btn-primary btn-sm" onclick="downloadAllPdfs()" disabled>
+                            <i class="fas fa-download"></i> Download All (<span id="downloadAllCount">0</span>)
+                        </button>
+                    </div>
+                </div>
+                <div id="pdfList"></div>
+            </div>
+
+            <!-- Preview Modal -->
+            <div class="modal fade" id="pdfPreviewModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width: 95vw;">
+                    <div class="modal-content" style="height: 92vh;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pdfPreviewTitle">Preview</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0" style="height: calc(100% - 56px);">
+                            <iframe id="pdfPreviewFrame" src="" title="PDF Preview" style="width: 100%; height: 100%; border: 0;"></iframe>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <small class="text-muted" id="pdfPreviewMeta"></small>
+                            <div class="d-flex gap-2">
+                                <a id="pdfPreviewOpen" href="#" target="_blank" rel="noopener" class="btn btn-view"><i class="fas fa-external-link-alt"></i> Open in new tab</a>
+                                <a id="pdfPreviewDownload" href="#" download class="btn btn-download"><i class="fas fa-download"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No papers found</h3>
+                <p>Try adjusting your search criteria</p>
+            </div>
+            
+            <div id="loading" class="loading">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p>Loading PDF index...</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let pdfData = null;
+        let assetMapping = {}; // Map subject codes to asset paths
+        let displayedPdfs = []; // Last rendered results (used for Download All)
+        let isGrid = false; // View mode
+        let searchDebounceTimer = null;
+        
+        // Load PDF index on page load
+        async function loadPDFIndex() {
+            try {
+                // Load asset mapping first (from assets folder structure)
+                try {
+                    const assetResponse = await fetch('asset_mapping.json');
+                    if (assetResponse.ok) {
+                        assetMapping = await assetResponse.json();
+                        console.log('Asset mapping loaded:', Object.keys(assetMapping).length, 'subject codes');
+                    }
+                } catch (e) {
+                    console.warn('Could not load asset_mapping.json:', e);
+                }
+                
+                // Load extracted_data.json as primary data source
+                let response = await fetch('extracted_data.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load extracted_data.json');
+                }
+                const extractedData = await response.json();
+                
+                // Transform extracted_data.json to expected format
+                pdfData = {
+                    pdfs: normalizeExtractedData(extractedData),
+                    metadata: generateMetadata(extractedData)
+                };
+                
+                console.log('PDF Data loaded:', pdfData.pdfs.length, 'papers');
+                populateFilters();
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                document.getElementById('loading').innerHTML = 
+                    '<i class="fas fa-exclamation-triangle fa-3x text-danger"></i><p>Error loading data: ' + error.message + '</p>';
+            }
+        }
+        
+        // Normalize extracted_data.json structure
+        function normalizeExtractedData(extractedData) {
+            return extractedData.map(item => {
+                const subjectCode = item.subject_code;
+                const semester = normalizeSemester(item.semester);
+                
+                // Find asset path(s) for this subject code
+                const assetPaths = findAssetPaths(subjectCode, semester);
+                
+                // Determine type (cop or exam) based on asset paths
+                let type = 'exam'; // default
+                if (assetPaths && assetPaths.length > 0) {
+                    // Check if any path is COP
+                    const hasCop = assetPaths.some(p => p.type === 'cop');
+                    const hasExam = assetPaths.some(p => p.type === 'exam');
+                    if (hasCop && !hasExam) {
+                        type = 'cop';
+                    } else if (hasCop && hasExam) {
+                        type = 'both'; // Has both types
+                    }
+                }
+                
+                const normalized = {
+                    subject_code: subjectCode,
+                    subject_name: item.subject || item.subject_name || subjectCode,
+                    branch_code: item.branch_code || '',
+                    branch: item.branch || '',
+                    branch_normalized: item.branch_code || item.branch || '',
+                    semester: semester,
+                    year: item.year || '',
+                    course: extractCourse(item.branch),
+                    type: type,
+                    paths: assetPaths || [], // Array of available paths
+                    path: assetPaths && assetPaths.length > 0 ? assetPaths[0].path : null, // Primary path for compatibility
+                    filename: assetPaths && assetPaths.length > 0 ? assetPaths[0].filename : (subjectCode + '.pdf')
+                };
+                return normalized;
+            });
+        }
+        
+        // Extract course from branch field
+        function extractCourse(branch) {
+            if (!branch) return '';
+            if (branch.includes('B.Tech')) return 'B.Tech';
+            if (branch.includes('M.Tech')) return 'M.Tech';
+            if (branch.includes('MBA')) return 'MBA';
+            if (branch.includes('MCA')) return 'MCA';
+            if (branch.includes('BBA')) return 'BBA';
+            if (branch.includes('BCA')) return 'BCA';
+            return branch;
+        }
+        
+        // Normalize semester format
+        function normalizeSemester(sem) {
+            if (!sem) return '';
+            // Convert numeric to Roman
+            const numToRoman = {1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V', 6: 'VI', 7: 'VII', 8: 'VIII'};
+            if (typeof sem === 'number' || /^\d+$/.test(sem)) {
+                return numToRoman[parseInt(sem)] || sem;
+            }
+            // Normalize variations
+            const semLower = sem.toLowerCase().trim();
+            if (semLower.includes('first') || semLower === '1' || semLower === '1st') return 'I';
+            if (semLower.includes('second') || semLower === '2' || semLower === '2nd') return 'II';
+            if (semLower.includes('third') || semLower === '3' || semLower === '3rd') return 'III';
+            if (semLower.includes('fourth') || semLower === '4' || semLower === '4th') return 'IV';
+            if (semLower === '5' || semLower === '5th') return 'V';
+            if (semLower === '6' || semLower === '6th') return 'VI';
+            if (semLower === '7' || semLower === '7th') return 'VII';
+            if (semLower === '8' || semLower === '8th') return 'VIII';
+            return sem.toUpperCase();
+        }
+        
+        // Find asset paths by subject code
+        function findAssetPaths(subjectCode, semester = null) {
+            if (!subjectCode) return null;
+            
+            // Try exact match first
+            if (assetMapping[subjectCode]) {
+                let paths = assetMapping[subjectCode];
+                // If semester specified, filter by semester
+                if (semester) {
+                    paths = paths.filter(p => p.semester === semester);
+                }
+                return paths.length > 0 ? paths : assetMapping[subjectCode];
+            }
+            
+            // Try normalized match (remove trailing letters)
+            const normalizedCode = subjectCode.replace(/[A-Z]$/, '');
+            if (normalizedCode !== subjectCode && assetMapping[normalizedCode]) {
+                let paths = assetMapping[normalizedCode];
+                if (semester) {
+                    paths = paths.filter(p => p.semester === semester);
+                }
+                return paths.length > 0 ? paths : assetMapping[normalizedCode];
+            }
+            
+            return null;
+        }
+        
+        // Generate metadata from extracted data
+        function generateMetadata(extractedData) {
+            const courses = new Set();
+            const branches = new Set();
+            const branchCodes = new Set();
+            const semesters = new Set();
+            const years = new Set();
+            
+            extractedData.forEach(item => {
+                if (item.branch) {
+                    const course = extractCourse(item.branch);
+                    if (course) courses.add(course);
+                }
+                if (item.branch) branches.add(item.branch);
+                if (item.branch_code) branchCodes.add(item.branch_code);
+                if (item.semester) semesters.add(normalizeSemester(item.semester));
+                if (item.year) years.add(item.year);
+            });
+            
+            return {
+                courses: Array.from(courses).sort(),
+                branches: Array.from(branches).sort(),
+                branchCodes: Array.from(branchCodes).sort(),
+                semesters: Array.from(semesters).sort(),
+                years: Array.from(years).sort().reverse()
+            };
+        }
+        
+        function populateFilters() {
+            if (!pdfData) return;
+            
+            const metadata = pdfData.metadata || {};
+            
+            // Populate courses
+            const courseSelect = document.getElementById('courseSelect');
+            courseSelect.innerHTML = '<option value="">All Courses</option>';
+            if (metadata.courses && metadata.courses.length > 0) {
+                metadata.courses.forEach(course => {
+                const option = document.createElement('option');
+                    option.value = course;
+                    option.textContent = course;
+                    courseSelect.appendChild(option);
+                });
+            }
+            
+            // Initialize semester filter
+            updateSemesterFilter();
+        }
+        
+        function updateSubjectFilter() {
+            if (!pdfData) return;
+            
+            const course = document.getElementById('courseSelect').value;
+            const semester = document.getElementById('semesterSelect').value;
+            const subjectSelect = document.getElementById('subjectSelect');
+            
+            // Clear current subjects
+            subjectSelect.innerHTML = '<option value="">All Subjects</option>';
+            
+            // Get subjects filtered by course and semester
+            const subjects = new Set();
+            pdfData.pdfs.forEach(pdf => {
+                const matchesCourse = !course || pdf.course === course;
+                const matchesSemester = !semester || pdf.semester === semester;
+                if (matchesCourse && matchesSemester) {
+                    const subject = pdf.subject_name;
+                    if (subject && subject.trim()) {
+                        subjects.add(subject.trim());
+                    }
+                }
+            });
+            
+            // Populate subjects
+            Array.from(subjects).sort().forEach(subject => {
+                const option = document.createElement('option');
+                option.value = subject;
+                option.textContent = subject;
+                subjectSelect.appendChild(option);
+            });
+            
+            // No year filter; results will update on Search
+        }
+        
+        function updateSemesterFilter() {
+            if (!pdfData) return;
+            
+            const course = document.getElementById('courseSelect').value;
+            const subject = document.getElementById('subjectSelect').value;
+            const semesterSelect = document.getElementById('semesterSelect');
+            
+            // Clear current semesters
+            semesterSelect.innerHTML = '<option value="">All Semesters</option>';
+            
+            // Get semesters filtered by course and subject
+            const semesters = new Set();
+            pdfData.pdfs.forEach(pdf => {
+                if ((!course || pdf.course === course) &&
+                    (!subject || pdf.subject_name === subject)) {
+                    const semester = pdf.semester;
+                    if (semester) {
+                        semesters.add(semester);
+                    }
+                }
+            });
+            
+            // Populate semesters (sort numerically/roman)
+            const sortedSemesters = Array.from(semesters).sort((a, b) => {
+                const order = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8};
+                return (order[a] || 99) - (order[b] || 99);
+            });
+            sortedSemesters.forEach(semester => {
+                const option = document.createElement('option');
+                option.value = semester;
+                option.textContent = semester + ' Semester';
+                semesterSelect.appendChild(option);
+            });
+            
+            // Update subject filter (when course changes)
+            updateSubjectFilter();
+        }
+        
+        // (Year filter removed)
+        
+        function filterPDFs() {
+            if (!pdfData) {
+                alert('PDF index not loaded yet. Please wait...');
+                return;
+            }
+            
+            const course = document.getElementById('courseSelect').value;
+            const subject = document.getElementById('subjectSelect').value;
+            const semester = document.getElementById('semesterSelect').value;
+            const type = document.getElementById('typeSelect').value;
+            
+            // Filter PDFs
+            let filtered = pdfData.pdfs.filter(pdf => {
+                if (course && pdf.course !== course) return false;
+                if (subject && pdf.subject_name !== subject) return false;
+                if (semester && pdf.semester !== semester) return false;
+                if (type) {
+                    if (type === 'cop' && pdf.type !== 'cop') return false;
+                    if (type === 'exam' && pdf.type !== 'exam') return false;
+                    if (type === 'both' && pdf.type !== 'both') return false;
+                }
+                return true;
+            });
+            
+            // If ALL filters are empty and no search text, show per-file results (ungrouped)
+            const allEmpty = (
+                !document.getElementById('searchInput').value.trim() &&
+                !course && !subject && !semester && !type
+            );
+            // Also: when Type is All (empty), show per-file results to include both Exam and COP variants
+            if (allEmpty || !type) {
+                const flattened = [];
+                filtered.forEach(pdf => {
+                    if (pdf.paths && pdf.paths.length > 0) {
+                        pdf.paths.forEach(p => {
+                            flattened.push({
+                                subject_code: pdf.subject_code,
+                                subject_name: pdf.subject_name,
+                                branch_code: pdf.branch_code,
+                                branch: pdf.branch,
+                                branch_normalized: pdf.branch_normalized,
+                                semester: pdf.semester,
+                                year: pdf.year,
+                                course: pdf.course,
+                                type: p.type || pdf.type,
+                                paths: [p]
+                            });
+                        });
+                    } else if (pdf.path) {
+                        flattened.push({
+                            subject_code: pdf.subject_code,
+                            subject_name: pdf.subject_name,
+                            branch_code: pdf.branch_code,
+                            branch: pdf.branch,
+                            branch_normalized: pdf.branch_normalized,
+                            semester: pdf.semester,
+                            year: pdf.year,
+                            course: pdf.course,
+                            type: pdf.type,
+                            paths: [{ path: pdf.path, filename: pdf.filename, type: pdf.type }]
+                        });
+                    }
+                });
+                displayResults(flattened);
+                return;
+            }
+            
+            displayResults(filtered);
+        }
+        
+        function displayResults(pdfs) {
+            const resultsSection = document.getElementById('resultsSection');
+            const noResults = document.getElementById('noResults');
+            const statsSection = document.getElementById('statsSection');
+            const pdfList = document.getElementById('pdfList');
+            const totalResults = document.getElementById('totalResults');
+            
+            // Hide all sections first
+            resultsSection.style.display = 'none';
+            noResults.style.display = 'none';
+            statsSection.style.display = 'none';
+            
+            if (pdfs.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+            
+            // Show stats
+            totalResults.textContent = pdfs.length;
+            statsSection.style.display = 'flex';
+            
+            // Compute total files available for download in this result
+            let totalFiles = 0;
+            pdfs.forEach(pdf => {
+                if (Array.isArray(pdf.paths) && pdf.paths.length > 0) totalFiles += pdf.paths.length;
+                else if (pdf.path) totalFiles += 1;
+            });
+            
+            // Update Download All button
+            displayedPdfs = pdfs;
+            const dlBtn = document.getElementById('downloadAllBtn');
+            const dlCount = document.getElementById('downloadAllCount');
+            if (dlBtn && dlCount) {
+                dlCount.textContent = totalFiles;
+                dlBtn.disabled = totalFiles === 0;
+            }
+            
+            // (Sorting disabled)
+            
+            // Display results
+            pdfList.innerHTML = '';
+            pdfs.forEach(pdf => {
+                const card = createPDFCard(pdf);
+                pdfList.appendChild(card);
+            });
+            
+            resultsSection.style.display = 'block';
+        }
+
+        function toggleResultsView() {
+            isGrid = !isGrid;
+            const section = document.getElementById('resultsSection');
+            const btn = document.getElementById('toggleViewBtn');
+            if (isGrid) {
+                section.classList.add('results-grid');
+                if (btn) btn.innerHTML = '<i class="fas fa-list"></i>';
+            } else {
+                section.classList.remove('results-grid');
+                if (btn) btn.innerHTML = '<i class="fas fa-grip"></i>';
+            }
+        }
+
+        // (Sort option removed)
+
+        // Download all PDFs in the current result set
+        function downloadAllPdfs() {
+            if (!displayedPdfs || displayedPdfs.length === 0) return;
+            
+            // Gather all file hrefs
+            const files = [];
+            displayedPdfs.forEach(pdf => {
+                if (Array.isArray(pdf.paths) && pdf.paths.length > 0) {
+                    pdf.paths.forEach(p => {
+                        if (p && p.path) files.push({ href: p.path, filename: p.filename || '' });
+                    });
+                } else if (pdf.path) {
+                    files.push({ href: pdf.path, filename: pdf.filename || '' });
+                }
+            });
+            
+            if (files.length === 0) return;
+            
+            // Confirm for large batches
+            if (files.length > 50) {
+                const proceed = confirm(`This will start ${files.length} downloads. Continue?`);
+                if (!proceed) return;
+            }
+            
+            // Trigger downloads with a small delay to avoid browser blocking
+            let i = 0;
+            const triggerNext = () => {
+                if (i >= files.length) return;
+                const file = files[i++];
+                const a = document.createElement('a');
+                a.href = file.href;
+                if (file.filename) a.download = file.filename;
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                setTimeout(triggerNext, 150); // 150ms gap
+            };
+            triggerNext();
+        }
+
+        // Open preview modal for a PDF
+        function openPreview(href, title) {
+            try {
+                const modalEl = document.getElementById('pdfPreviewModal');
+                const frame = document.getElementById('pdfPreviewFrame');
+                const openLink = document.getElementById('pdfPreviewOpen');
+                const downloadLink = document.getElementById('pdfPreviewDownload');
+                const meta = document.getElementById('pdfPreviewMeta');
+                const titleEl = document.getElementById('pdfPreviewTitle');
+                
+                frame.src = href;
+                openLink.href = href;
+                downloadLink.href = href;
+                titleEl.textContent = title || 'Preview';
+                meta.textContent = href;
+                
+                const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                modal.show();
+            } catch (e) {
+                window.open(href, '_blank');
+            }
+        }
+        
+        function createPDFCard(pdf) {
+            const card = document.createElement('div');
+            const subjectName = pdf.subject_name || pdf.subject_code;
+            
+            // Determine PDF path(s) - use assets folder structure
+            let pdfPaths = [];
+            if (pdf.paths && pdf.paths.length > 0) {
+                pdfPaths = pdf.paths;
+            } else if (pdf.path) {
+                pdfPaths = [{path: pdf.path, filename: pdf.filename || pdf.subject_code + '.pdf', type: pdf.type || 'exam'}];
+            }
+            
+            const hasPDF = pdfPaths.length > 0;
+            
+            // Add pdf-not-found class if we're not sure about the PDF
+            if (!hasPDF) {
+                card.className = 'pdf-card pdf-not-found';
+            } else {
+            card.className = 'pdf-card';
+            }
+            
+            // Determine type badge
+            let typeBadge = 'Normal';
+            if (pdf.type === 'cop') {
+                typeBadge = 'COP';
+            } else if (pdf.type === 'both') {
+                typeBadge = 'COP & Exam';
+            }
+            
+            // Create download/view links
+            let downloadLinks = '';
+            if (hasPDF) {
+                if (pdfPaths.length === 1) {
+                    // Single file
+                    downloadLinks = `<div class=\"d-flex flex-wrap gap-2\">
+                        <a href=\"${pdfPaths[0].path}\" class=\"btn-download\" download aria-label=\"Download PDF\">
+                            <i class=\"fas fa-download\"></i> Download
+                        </a>
+                        <a href=\"${pdfPaths[0].path}\" class=\"btn-view\" target=\"_blank\" rel=\"noopener\" aria-label=\"View PDF\">
+                            <i class=\"fas fa-eye\"></i> View
+                        </a>
+                    </div>`;
+                } else {
+                    // Multiple files - create dropdown or show first with count
+                    downloadLinks = `<div class="btn-group">
+                        <a href="${pdfPaths[0].path}" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download (${pdfPaths.length})
+                        </a>
+                        <button type="button" class="btn-download dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            ${pdfPaths.map((p, idx) => `
+                                <li><a class=\"dropdown-item\" href=\"${p.path}\" target=\"_blank\" rel=\"noopener\">View: ${p.filename} ${p.type === 'cop' ? '(COP)' : '(Exam)'}
+                                </a></li>
+                                <li><a class=\"dropdown-item\" href=\"${p.path}\" download>
+                                    Download: ${p.filename} ${p.type === 'cop' ? '(COP)' : '(Exam)'}
+                                </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                            `).join('')}
+                        </ul>
+                    </div>`;
+                }
+            } else {
+                downloadLinks = `<span class="btn-download" style="cursor: not-allowed;">
+                    <i class="fas fa-exclamation-triangle"></i> PDF Not Found
+                </span>`;
+            }
+            
+            card.innerHTML = `
+                <div class="pdf-info">
+                    <div class="pdf-title">
+                        <i class="fas fa-file-pdf text-danger"></i> ${subjectName}
+                        ${pdf.subject_code && subjectName !== pdf.subject_code ? `<small class="text-muted"> (${pdf.subject_code})</small>` : ''}
+                    </div>
+                    <div class="pdf-meta mt-2">
+                        ${pdf.course ? `<span class="badge badge-course" style="background: #e1bee7; color: #4a148c;">${pdf.course}</span>` : ''}
+                        ${pdf.year ? `<span class="badge badge-year">${pdf.year}</span>` : ''}
+                        ${pdf.semester ? `<span class="badge badge-semester">${pdf.semester} Semester</span>` : ''}
+                        ${pdf.branch_code ? `<span class="badge badge-code">${pdf.branch_code}</span>` : ''}
+                        ${pdf.branch || pdf.branch_normalized ? `<span class="badge badge-branch">${pdf.branch || pdf.branch_normalized}</span>` : ''}
+                        <span class="badge badge-type">${typeBadge}</span>
+                        ${pdfPaths.length > 1 ? `<span class="badge" style="background: #bbdefb; color: #1565c0;">${pdfPaths.length} files</span>` : ''}
+                    </div>
+                </div>
+                ${downloadLinks}
+            `;
+            
+            return card;
+        }
+        
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('courseSelect').value = '';
+            document.getElementById('subjectSelect').value = '';
+            document.getElementById('semesterSelect').value = '';
+            document.getElementById('typeSelect').value = '';
+            updateSemesterFilter();
+            document.getElementById('resultsSection').style.display = 'none';
+            document.getElementById('noResults').style.display = 'none';
+            document.getElementById('statsSection').style.display = 'none';
+        }
+        
+        // Pattern-based search parsing
+        function parseSearchQuery(query) {
+            if (!query || !query.trim()) return null;
+            
+            query = query.trim();
+            
+            // Check if it's a pattern (contains colons)
+            if (query.includes(':')) {
+                const parts = query.split(':').map(p => p.trim());
+                
+                // Supported pattern: subject:semester (extra parts ignored)
+                if (parts.length >= 2) {
+                    const result = {
+                        subject: parts[0] || null,
+                        semester: parts[1] ? normalizeSemester(parts[1]) : null,
+                        year: null,
+                        branch: null
+                    };
+                    
+                    return result;
+                }
+            } else {
+                // No colons - treat as subject-only fuzzy search
+                return { subject: query, semester: null, year: null, branch: null };
+            }
+            
+            return null;
+        }
+        
+        // Normalize year format
+        function normalizeYear(year) {
+            if (!year) return null;
+            // Handle formats: 2023, 2023-2024, 23-24
+            year = year.trim();
+            if (/^\d{4}$/.test(year)) {
+                // Single year, convert to range
+                const nextYear = String(parseInt(year) + 1).slice(-2);
+                return `${year}-${nextYear}`;
+            } else if (/^\d{2}-\d{2}$/.test(year)) {
+                // Short format like 23-24
+                return `20${year}`;
+            }
+            return year;
+        }
+        
+        // Fuzzy match subject name (stricter for multi-word queries)
+        function fuzzyMatchSubject(subjectName, query) {
+            if (!subjectName || !query) return false;
+            const subject = subjectName.toLowerCase().trim();
+            const q = query.toLowerCase().trim();
+            
+            // Tokenize subject into words (remove punctuation)
+            const subjectWords = subject.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+            const queryWords = q.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+            
+            // Single-word query: allow substring match
+            if (queryWords.length === 1) {
+                const qw = queryWords[0];
+                if (subject.includes(qw)) return true;
+                return subjectWords.some(sw => sw.startsWith(qw));
+            }
+            
+            // Multi-word query: require all words to match start-of-word or whole word
+            return queryWords.every(qw => subjectWords.some(sw => sw === qw || sw.startsWith(qw)));
+        }
+        
+        // Map common branch names to codes
+        function getBranchCodeFromName(query) {
+            const branchMap = {
+                'cy': 'CY', 'cyber': 'CY', 'cyber security': 'CY', 'cybersecurity': 'CY',
+                'cse': 'CSE', 'computer science': 'CSE', 'cs': 'CSE',
+                'it': 'IT', 'information technology': 'IT',
+                'ece': 'ECE', 'electronics': 'ECE', 'ec': 'ECE',
+                'me': 'ME', 'mechanical': 'ME',
+                'bt': 'BT', 'biotechnology': 'BT', 'bio': 'BT',
+                'as': 'AS', 'applied science': 'AS',
+                'iot': 'IOT', 'internet of things': 'IOT',
+                'ml': 'ML', 'machine learning': 'ML', 'ai': 'ML', 'artificial intelligence': 'ML',
+                'ds': 'DS', 'data science': 'DS',
+                'csbs': 'CSBS', 'computer science business systems': 'CSBS',
+                'mba': 'MBA',
+                'bba': 'BBA', 'business administration': 'BBA',
+                'mca': 'MCA',
+                'oe': 'OE'
+            };
+            
+            const q = query.toLowerCase().trim();
+            return branchMap[q] || null;
+        }
+        
+        // Match branch by code or name
+        function matchBranch(branchCode, branchName, query) {
+            if (!query) return true;
+            const q = query.toLowerCase().trim();
+            const code = (branchCode || '').toLowerCase();
+            const name = (branchName || '').toLowerCase();
+            
+            // Check direct matches
+            if (code === q || code.includes(q) || q.includes(code)) return true;
+            if (name === q || name.includes(q) || q.includes(name)) return true;
+            
+            // Check branch name mapping
+            const mappedCode = getBranchCodeFromName(q);
+            if (mappedCode && code === mappedCode.toLowerCase()) return true;
+            
+            return false;
+        }
+        
+        // Handle search input with pattern-based search
+        function handleSearchInput(event) {
+            // Clear existing timer
+            if (searchDebounceTimer) {
+                clearTimeout(searchDebounceTimer);
+            }
+            
+            // Debounce search
+            searchDebounceTimer = setTimeout(() => {
+                const query = event.target.value.trim();
+                
+                if (!query) {
+                    // Clear search results if query is empty
+                    document.getElementById('resultsSection').style.display = 'none';
+                    document.getElementById('noResults').style.display = 'none';
+                    document.getElementById('statsSection').style.display = 'none';
+                    return;
+                }
+                
+                if (!pdfData) {
+                    alert('PDF index not loaded yet. Please wait...');
+                    return;
+                }
+                
+                // Parse query
+                const parsed = parseSearchQuery(query);
+                
+                if (!parsed) {
+                    // Invalid pattern, try fuzzy search across all fields
+                    performFuzzySearch(query);
+                    return;
+                }
+                
+                // Perform pattern-based search (subject + optional semester)
+                let filtered = pdfData.pdfs.filter(pdf => {
+                    if (parsed.subject && !fuzzyMatchSubject(pdf.subject_name, parsed.subject)) return false;
+                    if (parsed.semester && pdf.semester !== parsed.semester) return false;
+                    return true;
+                });
+                
+                // Quick search shows per-file results to include all variants
+                const flattened = [];
+                filtered.forEach(pdf => {
+                    if (pdf.paths && pdf.paths.length > 0) {
+                        pdf.paths.forEach(p => {
+                            flattened.push({
+                                subject_code: pdf.subject_code,
+                                subject_name: pdf.subject_name,
+                                branch_code: pdf.branch_code,
+                                branch: pdf.branch,
+                                branch_normalized: pdf.branch_normalized,
+                                semester: pdf.semester,
+                                year: pdf.year,
+                                course: pdf.course,
+                                type: p.type || pdf.type,
+                                paths: [p]
+                            });
+                        });
+                    } else if (pdf.path) {
+                        flattened.push({
+                            subject_code: pdf.subject_code,
+                            subject_name: pdf.subject_name,
+                            branch_code: pdf.branch_code,
+                            branch: pdf.branch,
+                            branch_normalized: pdf.branch_normalized,
+                            semester: pdf.semester,
+                            year: pdf.year,
+                            course: pdf.course,
+                            type: pdf.type,
+                            paths: [{ path: pdf.path, filename: pdf.filename, type: pdf.type }]
+                        });
+                    }
+                });
+                displayResults(flattened);
+            }, 300); // 300ms debounce
+        }
+        
+        // Fallback fuzzy search if pattern parsing fails
+        function performFuzzySearch(query) {
+            const q = query.toLowerCase();
+            let filtered = pdfData.pdfs.filter(pdf => {
+                // Search across subject name, subject code, branch code, branch name
+                const subject = (pdf.subject_name || '').toLowerCase();
+                const code = (pdf.subject_code || '').toLowerCase();
+                const branchCode = (pdf.branch_code || '').toLowerCase();
+                const branch = (pdf.branch || '').toLowerCase();
+                
+                return subject.includes(q) || 
+                       code.includes(q) || 
+                       branchCode.includes(q) || 
+                       branch.includes(q);
+            });
+            
+            displayResults(filtered);
+        }
+        
+        // Load index on page load
+        loadPDFIndex();
+    </script>
+</body>
+</html>
+

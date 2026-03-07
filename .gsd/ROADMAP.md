@@ -114,3 +114,18 @@
 
 **Verification**:
 - [x] Validate visually by testing `/ppt/search` route locally
+
+---
+
+### Phase 10: Clickable Faculty Name Search
+**Status**: ✅ Completed
+**Objective**: Make the `faculty_name` inside `PaperCard` clickable so that it re-filters the current search view to show all papers by that specific teacher. It should be colored sky blue.
+**Depends on**: Phase 9
+
+**Tasks**:
+- [x] Update `PaperCard.tsx` styling and `onClick` handler
+- [x] Update `Papers.tsx` search param synchronisation
+
+**Verification**:
+- [x] `npm run build` passes locally
+

@@ -1,4 +1,5 @@
 import { memo, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { DisplayPaper } from "@/types/examPaper";
 import { Button } from "./ui/button";
 import { Download, Eye, TrendingUp, ChevronDown, Loader2 } from "lucide-react";
@@ -29,6 +30,8 @@ const PaperCard = ({
   onPreview
 }: PaperCardProps) => {
   const [downloadingFile, setDownloadingFile] = useState<string | null>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const hasMultipleFiles = paper.paths.length > 1;
   const primaryPath = paper.primaryPath || (paper.paths[0]?.path || "");
@@ -106,8 +109,22 @@ const PaperCard = ({
               </p>
             )}
             {paper.faculty_name && paper.faculty_name !== "Unknown" && (
-              <p className="text-sm text-muted-foreground flex items-center gap-1.5 mt-1">
-                By {paper.faculty_name}
+              <p className="text-sm flex items-center gap-1.5 mt-1">
+                <span className="text-muted-foreground">By</span>
+                <span
+                  className="text-sky-500 hover:text-sky-600 hover:underline transition-colors font-medium cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const basePath = location.pathname.includes('/exam') ? '/exam/search' : '/ppt/search';
+                    navigate(`${basePath}?search=${encodeURIComponent(paper.faculty_name)}`, {
+                      replace: false,
+                      state: { initialSearch: paper.faculty_name }
+                    });
+                  }}
+                  title={`Search for all materials by ${paper.faculty_name}`}
+                >
+                  {paper.faculty_name}
+                </span>
               </p>
             )}
           </div>

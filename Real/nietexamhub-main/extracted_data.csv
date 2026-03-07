@@ -1,0 +1,503 @@
+subject_code,branch_code,branch,semester,year,subject,source_file
+ACSE0202,CSE,B.Tech,II,2022-2023,Problem Solving using Advanced Python,main_01.pdf
+BMBA0202,MBA,MBA,II,2023-2024,Corporate Finance,main_01.pdf
+ACSBS0202,CSBS,B.Tech,II,2021-2022,Principles of Electronics,main_09.pdf
+ACSDS0601,DS,B.Tech,VI,2023-2024,Big Data Analytics,main_01.pdf
+AMIAS0402,AS,M.Tech (Integrated),IV,2021-2022,Engineering Mathematics- IV,main_01.pdf
+AAS0101A,AS,B.Tech,I,2022-2023,Engineering Physics,main_01.pdf
+AAS0101C,AS,B.Tech,I,2022-2023,Engineering Physics,main_01.pdf
+AAS0102,AS,B.Tech,I,2022-2023,Engineering Chemistry,main_01.pdf
+AAS0103,AS,B.Tech,I,2022-2023,Engineering Mathematics-I,main_01.pdf
+AASH0103,AS,B.Tech,I,2022-2023,Engineering Mathematics-I,main_01.pdf
+AASL0101,AS,B.Tech,I,2022-2023,Professional Communication,main_01.pdf
+AASLH0101,AS,B.Tech,I,2022-2023,Professional Communication,main_01.pdf
+ABT0101,BT,B.Tech,I,2022-2023,- Elementary Mathematics,main_01.pdf
+ACSBS0101,CSBS,B.Tech,I,2022-2023,Physics for Computing Science,main_01.pdf
+ACSBS0102,CSBS,B.Tech,I,2022-2023,Principles of Electrical Engineering,main_01.pdf
+ACSBS0103,CSBS,B.Tech,I,2022-2023,Fundamentals of Computer Science,main_01.pdf
+ACSBS0104,CSBS,B.Tech,I,2022-2023,Business Communication & Value Science – I,main_01.pdf
+ACSBS0105,CSBS,B.Tech,I,2022-2023,"Introductory Topics in Statistics, Probability and Calculus",main_01.pdf
+ACSBS0106,CSBS,B.Tech,I,2022-2023,Discrete Mathematics,main_01.pdf
+ACSE0101,CSE,B.Tech,I,2022-2023,Problem Solving using Python,main_01.pdf
+ACSEH0101,CSE,B.Tech,I,2022-2023,Problem Solving using Python,main_01.pdf
+AEC0101,ECE,B.Tech,I,2022-2023,Basic Electrical and Electronics Engineering,main_01.pdf
+AECH0101,ECE,B.Tech,I,2022-2023,Basic Electrical and Electronics Engineering,main_01.pdf
+AMIASL0101,AS,M.Tech (Integrated),I,2022-2023,Professional Communication,main_01.pdf
+AMICSE0101,CSE,M.Tech (Integrated),I,2022-2023,Problem Solving using Python,main_01.pdf
+AEMIC0101,EMIC,M.Tech (Integrated),I,2022-2023,Basic Electrical and Electronics Engineering,main_01.pdf
+BAS0101AZ,AS,B.Tech,I,2024-2025,Engineering Physics,main_01.pdf
+BAS0103,AS,B.Tech,I,2024-2025,Engineering Mathematics-I,main_01.pdf
+BAS0104,AS,B.Tech,I,2023-2024,Mathematical Foundations-I,main_04.pdf
+BASL0102,AS,B.Tech,I,2024-2025,French,main_01.pdf
+BASL0103,AS,B.Tech,I,2024-2025,German,main_01.pdf
+BASL0104,AS,B.Tech,I,2024-2025,Japanese,main_01.pdf
+BBT0101,BT,B.Tech,I,2024-2025,Elementary Mathematics,main_01.pdf
+BCSBS0101,CSBS,B.Tech,I,2024-2025,Physics for Computing Science,main_01.pdf
+BCSBS0102,CSBS,B.Tech,I,2024-2025,Principles of Electrical Engineering,main_01.pdf
+BCSBS0105,CSBS,B.Tech,I,2024-2025,"Introductory Topics in Statistics, Probability and Calculus",main_01.pdf
+BCSBS0106,CSBS,B.Tech,I,2024-2025,Discrete Mathematics,main_01.pdf
+BCSBS0103,CSBS,B.Tech,I,2024-2025,Fundamentals of Computer Science,main_01.pdf
+BCSE0103,CSE,B.Tech,I,2024-2025,Design Thinking-I,main_01.pdf
+BEC0101Z,ECE,B.Tech,I,2024-2025,Basic Electrical and Electronics Engineering,main_01.pdf
+BEC0102,ECE,B.Tech,I,2024-2025,Electronics Engineering,main_01.pdf
+BNC0102,CY,B.Tech,I,2024-2025,"Constitution of India, Law and Engineering",main_01.pdf
+BNC0103,CY,B.Tech,I,2024-2025,Essence of Indian Traditional Knowledge,main_01.pdf
+AAS0104,AS,B.Tech,I,2022-2023,Mathematical Foundations– I,main_01.pdf
+AAS0201B,AS,B.Tech,II,2023-2024,Engineering Physics,main_02.pdf
+AAS0201A/AASH0201A,AS,B.Tech,II,2023-2024,Engineering Physics,main_02.pdf
+AAS0203/,AS,B.Tech,II,2023-2024,Engineering Mathematics-II,main_02.pdf
+AAS0204,AS,B.Tech,II,2023-2024,Mathematical Foundations – II,main_02.pdf
+AAS0301A,AS,B.Tech,III,2023-2024,Engineering Mathematics-III,main_02.pdf
+AAS0301B,AS,B.Tech,III,2023-2024,Engineering Mathematics-III,main_02.pdf
+AAS0303,AS,B.Tech,III,2023-2024,Statistics and Probability,main_02.pdf
+AAS0401B,AS,B.Tech,IV,2023-2024,Engineering Mathematics-III,main_02.pdf
+AAS0402,AS,B.Tech,IV,2023-2024,Engineering Mathematics- IV,main_02.pdf
+AAS0404,AS,B.Tech,IV,2023-2024,Optimization and Numerical Techniques,main_02.pdf
+AASL0202,AS,B.Tech,II,2023-2024,French,main_02.pdf
+AASL0401,AS,B.Tech,IV,2023-2024,Technical Communication,main_02.pdf
+ABT0201,BT,B.Tech,II,2023-2024,Introduction to Biotechnology,main_02.pdf
+ABT0305,BT,B.Tech,III,2023-2024,Biophysics,main_02.pdf
+ABT0401,BT,B.Tech,IV,2023-2024,Fermentation Engineering,main_02.pdf
+ABT0403,BT,B.Tech,IV,2023-2024,Structural and Computational Biology,main_02.pdf
+ABT0404,BT,B.Tech,IV,2023-2024,Green Biotechnology and Pollution Abetment,main_02.pdf
+ABT0405,BT,B.Tech,IV,2023-2024,rDNA Technology,main_02.pdf
+ABT0601,BT,B.Tech,VI,2023-2024,Bioseparation Engineering,main_02.pdf
+ABT0602,BT,B.Tech,VI,2023-2024,Metabolic Engineering,main_02.pdf
+ABT0603,BT,B.Tech,VI,2023-2024,Nanobiotechnology,main_02.pdf
+ABT0611,BT,B.Tech,VI,2023-2024,Bioreactor Analysis and Design,main_02.pdf
+ABT0612,BT,B.Tech,VI,2023-2024,Probability and Statistics using R in Biotechnology,main_02.pdf
+ACSAI0301,AI,B.Tech,III,2023-2024,Introduction to Artificial Intelligence,main_02.pdf
+ACSAI0302,AI,B.Tech,III,2023-2024,Logic Design and Computer Architecture,main_02.pdf
+ACSAI0401,AI,B.Tech,IV,2023-2024,Introduction to Artificial Intelligence,main_02.pdf
+ACSAI0402,AI,B.Tech,IV,2023-2024,Database Management Systems,main_02.pdf
+ACSAI0403,AI,B.Tech,IV,2023-2024,Introduction to Information Security and Cryptography,main_02.pdf
+ACSAI0512,AI,B.Tech,V,2023-2024,Data Analytics,main_02.pdf
+ACSAI0513,AI,B.Tech,V,2023-2024,Introduction to Artificial Intelligence,main_02.pdf
+ACSAI0514,AI,B.Tech,V,2023-2024,Introduction to cloud computing,main_02.pdf
+ACSAIO516,AI,B.Tech,,,,main_02.pdf
+ACSAI0519,AI,B.Tech,V,2023-2024,Business Intelligence and Data Visualization,main_02.pdf
+ACSAI0520,AI,B.Tech,V,2023-2024,Cloud Virtualization,main_02.pdf
+ACSAI0601,AI,B.Tech,VI,2023-2024,Blockchain Technology and Application Development,main_02.pdf
+ACSAI0611,AI,B.Tech,VI,2023-2024,Cloud Storage Management,main_02.pdf
+ACSAI0612,AI,B.Tech,VI,2023-2024,Advanced Java Programming,main_02.pdf
+ACSAI0613,AI,B.Tech,VI,2023-2024,Deep Learning,main_02.pdf
+ACSAI0617,AI,B.Tech,VI,2023-2024,Programming for Data Analytics,main_02.pdf
+ACSAI0619,AI,B.Tech,VI,2023-2024,Business Intelligence and Data Visualization,main_02.pdf
+ACSAI0621,AI,B.Tech,VI,2023-2024,Big Data,main_02.pdf
+ACSAI0622N,AI,B.Tech,VI,2023-2024,Social Media Analytics,main_02.pdf
+ACSBS0205,CSBS,B.Tech,II,2023-2024,Linear Algebra,main_02.pdf
+ACSBS0302,CSBS,B.Tech,III,2023-2024,Object Oriented Programming,main_02.pdf
+ACSBS0304,CSBS,B.Tech,III,2023-2024,Software Engineering,main_02.pdf
+ACSBS0305,CSBS,B.Tech,III,2023-2024,Financial Management,main_02.pdf
+ACSBS0401,CSBS,B.Tech,IV,2023-2024,Operations Research,main_02.pdf
+ACSBS0402,CSBS,B.Tech,IV,2023-2024,Software Design with UML,main_02.pdf
+ACSBS0404,CSBS,B.Tech,IV,2023-2024,Database Management Systems,main_02.pdf
+ACSBS0602,CSBS,B.Tech,VI,2023-2024,Computer Networks,main_02.pdf
+ACSCY0401,CY,B.Tech,IV,2023-2024,Computer Networks and Network Programming,main_02.pdf
+ACSDS0301N,DS,B.Tech,III,2023-2024,Foundations of Data Science,main_02.pdf
+ACSDS0602,DS,B.Tech,VI,2023-2024,Business Intelligence and Data Visualization,main_02.pdf
+ACSDS0603,DS,B.Tech,VI,2023-2024,Data Analytics,main_02.pdf
+ACSE0101/ACSEH0101,CSE,B.Tech,I,2023-2024,Problem Solving using Python,main_02.pdf
+ACSE0201,CSE,B.Tech,II,2023-2024,Programming for Problem Solving using C,main_02.pdf
+ACSE0203,CSE,B.Tech,II,2023-2024,Design Thinking-I,main_02.pdf
+ACSE0302,CSE,B.Tech,III,2023-2024,Object Oriented Techniques using Java,main_02.pdf
+ACSE0303,CSE,B.Tech,III,2023-2024,Design Thinking-I,main_02.pdf
+ACSE0306,CSE,B.Tech,III,2023-2024,Discrete Structures,main_02.pdf
+ACSE0401,CSE,B.Tech,IV,2023-2024,Design and Analysis of Algorithm,main_02.pdf
+ACSE0402,CSE,B.Tech,IV,2023-2024,Object Oriented Techniques Using Java,main_02.pdf
+ACSE0403A,CSE,B.Tech,IV,2023-2024,Operating System,main_02.pdf
+ACSE0403B,CSE,B.Tech,IV,2021-2022,Operating Systems,main_06.pdf
+ACSE0404,CSE,B.Tech,IV,2023-2024,Theory of Automata and Formal Languages,main_02.pdf
+ACSE0405,CSE,B.Tech,IV,2023-2024,Microprocessor,main_02.pdf
+ACSE0501,CSE,B.Tech,V,2023-2024,Design and Analysis of Algorithms,main_02.pdf
+ACSE0502,CSE,B.Tech,V,2023-2024,Computer Networks,main_02.pdf
+ACSE0503,CSE,B.Tech,V,2023-2024,Design Thinking-II,main_02.pdf
+ACSE0504,CSE,B.Tech,V,2023-2024,Compiler Design,main_02.pdf
+ACSE0505,CSE,B.Tech,V,2023-2024,Web Technology,main_02.pdf
+ACSE0506,CSE,B.Tech,V,,Database Management System,main_02.pdf
+ACSE0512,CSE,B.Tech,V,2023-2024,Python Web Development with Django,main_02.pdf
+ACSE0514,CSE,B.Tech,V,2023-2024,Design Patterns,main_02.pdf
+ACSE0515,CSE,B.Tech,V,2023-2024,Machine Learning,main_02.pdf
+ACSE0516,CSE,B.Tech,V,2023-2024,Web Technology,main_02.pdf
+ACSE0601,CSE,B.Tech,VI,2023-2024,Advanced Java Programming,main_02.pdf
+ACSE0602,CSE,B.Tech,VI,2023-2024,Computer Networks,main_02.pdf
+ACSE0603,CSE,B.Tech,VI,2023-2024,Software Engineering,main_02.pdf
+ACSE0612,CSE,B.Tech,VI,2022-2023,Full-Stack Web Development using Laravel with Vue.JS,main_07.pdf
+ACSE0614,CSE,B.Tech,VI,2023-2024,Web Development using MEAN Stack,main_02.pdf
+ACSE0701,CSE,B.Tech,VII,2023-2024,Computer Vision,main_02.pdf
+ACSIOT0301,IOT,B.Tech,III,2023-2024,Data Structures and Algorithms Design,main_02.pdf
+ACSIOT0302,IOT,B.Tech,III,2023-2024,Logic Design and Microcontroller,main_02.pdf
+ACSIOT0303,IOT,B.Tech,III,2023-2024,Introduction to IOT,main_02.pdf
+ACSIOT0401,IOT,B.Tech,IV,2023-2024,Mobile Application Development,main_02.pdf
+ACSIOT0501,IOT,B.Tech,V,2023-2024,Arm Architecture for IoT,main_02.pdf
+ACSIOT0602,IOT,B.Tech,VI,2023-2024,Cloud and Edge Computing,main_02.pdf
+ACSML0401,ML,B.Tech,IV,2023-2024,Machine Learning,main_02.pdf
+ACSML0401N,ML,B.Tech,IV,2023-2024,Machine Learning,main_03.pdf
+ACSML0601,ML,B.Tech,VI,2023-2024,Machine Learning,main_03.pdf
+ACSML0602,ML,B.Tech,VI,2023-2024,Deep Learning,main_03.pdf
+ACSML0603,ML,B.Tech,VI,2023-2024,Advanced Database Management Systems,main_03.pdf
+ACSML0702,ML,B.Tech,VII,2023-2024,Deep Learning,main_03.pdf
+AEC0201,ECE,B.Tech,II,2023-2024,Basic Electrical and Electronics Engineering,main_03.pdf
+AEC0301,ECE,B.Tech,III,2023-2024,Digital System Design,main_03.pdf
+AEC0302N,ECE,B.Tech,III,2023-2024,Electronic Devices,main_03.pdf
+AEC0303,ECE,B.Tech,IV,2023-2024,"Signal, System and Network",main_03.pdf
+AEC0304,ECE,B.Tech,III,2023-2024,Sensors and its Applications,main_03.pdf
+AEC0401,ECE,B.Tech,IV,2021-2022,Analog and Digital Communication,main_06.pdf
+AEC0402,ECE,B.Tech,IV,2023-2024,Analog Circuit,main_03.pdf
+AEC0403,ECE,B.Tech,IV,2023-2024,Internet of Things,main_03.pdf
+AEC0404,ECE,B.Tech,IV,2023-2024,Microprocessor and Microcontroller,main_03.pdf
+AEC0501,ECE,B.Tech,V,2023-2024,Control System,main_03.pdf
+AEC0502,ECE,B.Tech,V,2023-2024,CMOS Digital Integrated Circuit,main_03.pdf
+AEC0503,ECE,B.Tech,V,2023-2024,Electromagnetic Field Theory and Antenna,main_03.pdf
+AEC0513,ECE,B.Tech,V,2023-2024,Image Processing and Pattern Recognition,main_03.pdf
+AEC0601,ECE,B.Tech,VI,2023-2024,Digital Signal Processing,main_03.pdf
+AEC0602,ECE,B.Tech,VI,2023-2024,Wireless Communication Networks,main_03.pdf
+AEC0603,ECE,B.Tech,VI,2023-2024,5G Technology,main_03.pdf
+AEC0616,ECE,B.Tech,VI,2023-2024,Artificial Intelligence,main_03.pdf
+AEC0713,ECE,B.Tech,IV,2023-2024,Data Analytics,main_03.pdf
+AIT0401,IT,B.Tech,IV,2023-2024,Software Engineering,main_03.pdf
+AMBA0401,BBA,MBA,IV,2023-2024,Project Management,main_03.pdf
+AMBAFM0312,BBA,BBA,III,2023-2024,Corporate Tax Planning,main_03.pdf
+AMBAFM0411,BBA,MBA,IV,2023-2024,Financial Modeling,main_03.pdf
+AMBAHR0311,BBA,BBA,III,2023-2024,HR Analytics,main_03.pdf
+AMBAHR0411,BBA,MBA,IV,2023-2024,Talent Management,main_03.pdf
+AMBAHR0412,BBA,MBA,IV,2023-2024,Strategic Human Resource Management,main_03.pdf
+AMBALS0411,BBA,MBA,IV,2023-2024,Global Business Management for Logistics and Supply Chain,main_03.pdf
+AMBALS0412,BBA,MBA,IV,2023-2024,Information Systems in Logistics and Supply Chain,main_03.pdf
+AMBALS0413,BBA,MBA,IV,2023-2024,Supply Chain Analytics,main_03.pdf
+AMBAMK0311,BBA,MBA,III,2023-2024,Digital and Social Media Marketing,main_03.pdf
+AMBAMK0312,BBA,MBA,III,2023-2024,Product and Brand Management,main_03.pdf
+AMBAMK0413,BBA,MBA,IV,2023-2024,Marketing of Services,main_03.pdf
+AMCA0203N,MCA,MCA,II,2023-2024,Data Structure and Analysis of Algorithm,main_03.pdf
+AMCA0205,MCA,MCA,II,2023-2024,Design Thinking,main_03.pdf
+AMCA0304,MCA,MCA,III,2023-2024,Computer Networks,main_03.pdf
+AMCA0305,MCA,MCA,III,,Problem Solving using Python,main_03.pdf
+AMCA0401,MCA,MCA,IV,2023-2024,Artificial Intelligence,main_03.pdf
+AMCA0402,MCA,MCA,IV,2023-2024,Cloud Computing,main_03.pdf
+AME0302,ME,B.Tech,III,2023-2024,Materials Science and Engineering,main_03.pdf
+AME0303,ME,B.Tech,III,2023-2024,Engineering Mechanics,main_03.pdf
+AME0304,ME,B.Tech,III,2023-2024,Basic Thermodynamics,main_03.pdf
+AME0401,ME,B.Tech,IV,2023-2024,Manufacturing Technology-II,main_03.pdf
+AME0403,ME,B.Tech,IV,2023-2024,Strength of Materials,main_03.pdf
+AME0501,ME,B.Tech,V,2023-2024,Heat and Mass Transfer,main_03.pdf
+AME0502,ME,B.Tech,V,2023-2024,Theory of Machines,main_03.pdf
+AME0514,ME,B.Tech,V,2023-2024,Computer Aided Engineering,main_03.pdf
+AME0601,ME,B.Tech,VI,2023-2024,Design of Machine Elements,main_03.pdf
+AME0602,ME,B.Tech,VI,2023-2024,Refrigeration and Air-Conditioning,main_03.pdf
+AME0603,ME,B.Tech,III,2023-2024,Industrial Engineering,main_03.pdf
+AME0611,ME,B.Tech,VI,2023-2024,Hybrid Vehicles and Propulsion,main_03.pdf
+AME0613,ME,B.Tech,VI,2023-2024,Vehicle Body Engineering,main_13.pdf
+AMIAS0103,AS,M.Tech (Integrated),I,2023-2024,Engineering Mathematics I,main_03.pdf
+AMIAS0201A,AS,M.Tech (Integrated),II,2023-2024,Engineering Physics,main_03.pdf
+AMIAS0203,AS,M.Tech (Integrated),II,2023-2024,Engineering Mathematics-II,main_03.pdf
+AMIAS0301,AS,M.Tech (Integrated),III,2023-2024,Engineering Mathematics-III,main_03.pdf
+AMIASL0401,AS,M.Tech (Integrated),IV,2023-2024,Technical Communication,main_03.pdf
+AMIBA0101,BBA,MBA,I,2023-2024,Business Environment,main_03.pdf
+AMIBA0102,BBA,MBA,I,2023-2024,Business Mathematics,main_03.pdf
+AMIBA0103,BBA,MBA,I,2023-2024,Managerial Economics,main_03.pdf
+AMIBA0202,BBA,MBA,II,2023-2024,Financial Accounting-I,main_03.pdf
+AMIBA0203,BBA,MBA,II,2023-2024,Introduction to Business Statistics,main_03.pdf
+AMIBA0204,BBA,MBA,II,2023-2024,Macro Economics,main_03.pdf
+AMIBA0205,BBA,MBA,II,2023-2024,Organizational Behaviour,main_03.pdf
+AMIBA0401,BBA,MBA,IV,2023-2024,Business Research Methods,main_03.pdf
+AMIBA0402,BBA,MBA,IV,2023-2024,Human Resource Management,main_03.pdf
+AMIBA0403,BBA,MBA,IV,2023-2024,Financial Management,main_03.pdf
+AMIBA0404,BBA,MBA,IV,2023-2024,Data Base Management,main_03.pdf
+AMIBA0405,BBA,MBA,IV,2023-2024,Design Thinking-I,main_03.pdf
+AMIBA0406,BBA,MBA,IV,2023-2024,Production and Operations Management,main_03.pdf
+AMICA0301,MCA,MCA,III,2023-2024,Operating Systems,main_03.pdf
+AMICA0302,MCA,MCA,III,2023-2024,Data Structures,main_03.pdf
+AMICA0303,MCA,MCA,III,2023-2024,Accounting and Financial Management,main_03.pdf
+AMICA0401,MCA,MCA,IV,2023-2024,Cloud Computing,main_03.pdf
+AMICA0402,MCA,MCA,IV,2023-2024,Database Systems,main_03.pdf
+AMICSAI0520,CS,M.Tech (Integrated),V,2023-2024,Cloud Virtualization,main_03.pdf
+AMICSAI0602,CS,M.Tech,VI,2023-2024,Artificial Intelligence,main_13.pdf
+AMICSAI0611,CS,M.Tech (Integrated),VI,2023-2024,Cloud Storage Management,main_03.pdf
+AMICSAI0621,CS,M.Tech (Integrated),VI,2023-2024,Big Data,main_03.pdf
+AMICSE0203,CSE,M.Tech (Integrated),II,2023-2024,Design Thinking-I,main_03.pdf
+AMICSE0302,CSE,M.Tech (Integrated),III,2023-2024,Object Oriented Techniques using Java,main_03.pdf
+AMICSE0306,CSE,M.Tech (Integrated),III,2023-2024,Discrete Structures,main_03.pdf
+AMICSE0401,CSE,M.Tech (Integrated),IV,2023-2024,Design and Analysis of Algorithm,main_03.pdf
+AMICSE0403A,CSE,M.Tech (Integrated),IV,2023-2024,Operating System,main_03.pdf
+AMICSE0404,CSE,M.Tech (Integrated),IV,2023-2024,Theory of Automata and Formal Languages,main_03.pdf
+AMICSE0405,CSE,M.Tech (Integrated),IV,2023-2024,Microprocessor,main_03.pdf
+AMICSE0601,CSE,M.Tech (Integrated),VI,2023-2024,Advanced Java Programming,main_03.pdf
+AMICSE0602,CSE,M.Tech (Integrated),VI,2023-2024,Computer Networks,main_03.pdf
+ANC0301,CY,B.Tech,III,2023-2024,Cyber Security,main_03.pdf
+ANC0302,CY,B.Tech,III,2023-2024,Environmental Science,main_03.pdf
+ANC0303,CY,B.Tech,III,2023-2024,Indian Constitution,main_03.pdf
+ANC0401,CY,B.Tech,IV,2023-2024,Cyber Security,main_03.pdf
+ANC0402,CY,B.Tech,IV,2023-2024,Environmental Science,main_04.pdf
+ANC0404,CY,B.Tech,IV,2023-2024,Essence of Indian Traditional Knowledge,main_04.pdf
+ANC0501,CY,B.Tech,V,2023-2024,"Constitution of India, Law and Engineering",main_04.pdf
+ANC0602,CY,B.Tech,VI,2023-2024,Essence of Indian Traditional Knowledge,main_04.pdf
+AOE0662,OE,B.Tech,VI,2023-2024,Data Structures,main_04.pdf
+AOE0663,OE,B.Tech,VI,2023-2024,Artificial Intelligence,main_04.pdf
+AOE0667,OE,B.Tech,VI,2023-2024,Digital Marketing,main_04.pdf
+AOE0761,OE,B.Tech,VII,2023-2024,Project Management,main_04.pdf
+AOE0771,OE,B.Tech,V,2023-2024,Entrepreneurship Development and IPR,main_04.pdf
+AOE0861,OE,B.Tech,VIII,2023-2024,Total Quality Management,main_04.pdf
+AOE0866,OE,B.Tech,VIII,2023-2024,Sustainable Technologies,main_04.pdf
+AOE0867,OE,B.Tech,VIII,2023-2024,Industry 4.0,main_04.pdf
+BAS0101A,AS,B.Tech,I,2023-2024,Engineering Physics,main_04.pdf
+BAS0201A,AS,B.Tech,II,2023-2024,Engineering Physics,main_04.pdf
+BAS0201B,AS,B.Tech,II,2023-2024,Engineering Physics,main_04.pdf
+BAS0201C,AS,B.Tech,II,2023-2024,Engineering Physics,main_04.pdf
+BAS0203,AS,B.Tech,II,2023-2024,Engineering Mathematics-II,main_04.pdf
+BAS0204,AS,B.Tech,II,2023-2024,Mathematical Foundations – II,main_04.pdf
+BASL0202/,AS,B.Tech,II,2023-2024,French,main_04.pdf
+BASL0203,AS,B.Tech,II,2023-2024,German,main_04.pdf
+B/FXE2,UNKNOWN,B.Tech,I,2023-2024,Elementary Mathematics,main_04.pdf
+BCSBS0201,CSBS,B.Tech,II,2023-2024,Statistical Methods,main_04.pdf
+BCSE0103/,CSE,B.Tech,I,2023-2024,Design Thinking-I,main_04.pdf
+BCSE0203,CSE,B.Tech,II,2023-2024,Design Thinking-I,main_04.pdf
+BEC0101,ECE,B.Tech,I,2023-2024,Basic Electrical and Electronics Engineering,main_04.pdf
+BEC0201/,ECE,B.Tech,II,2023-2024,Basic Electrical and Electronics Engineering,main_04.pdf
+BMBA0101,MBA,MBA,I,2023-2024,Communication for Managers,main_04.pdf
+BMBA0102,MBA,MBA,I,2023-2024,Business Statistics and Quantitative techniques for Managers,main_04.pdf
+BMBA0103,MBA,MBA,I,2023-2024,Financial Accounting,main_04.pdf
+BMBA0104,MBA,MBA,I,2023-2024,"Innovation, Entrepreneurship and Design Thinking",main_04.pdf
+BMBA0105,MBA,MBA,I,2023-2024,Legal Aspects of Business,main_04.pdf
+BMBA0106,MBA,MBA,I,2023-2024,Managerial Economics,main_04.pdf
+BMBA0107,MBA,MBA,I,2023-2024,Organization Behaviour and Design,main_04.pdf
+BMBA0201,MBA,MBA,II,2023-2024,Business Research Methods,main_04.pdf
+BMBA0203,MBA,MBA,II,2023-2024,Human Capital Management,main_04.pdf
+BMBA0204,MBA,MBA,II,2023-2024,Introduction to Business Analytics,main_04.pdf
+BMBA0205,MBA,MBA,II,2023-2024,Marketing Management,main_04.pdf
+BMBA0206,MBA,MBA,II,2023-2024,Operations and Supply Chain Management,main_04.pdf
+BMCA0102,MCA,MCA,I,2023-2024,Data Structures,main_04.pdf
+BMCA0103,MCA,MCA,II,,Operating System,main_04.pdf
+BMCA0105,MCA,MCA,I,2023-2024,Discrete Mathematics,main_04.pdf
+BMCA0202,MCA,MCA,II,2023-2024,Database Systems,main_04.pdf
+BMCA0204,MCA,MCA,II,2023-2024,Design Thinking-I,main_04.pdf
+BMCA0211,MCA,MCA,II,2023-2024,Fundamentals of Digital Marketing and Analytics,main_04.pdf
+BMCA0214,MCA,MCA,II,2023-2024,Software Testing,main_04.pdf
+BMIAS0103,MIAS,M.Tech (Integrated),I,2023-2024,ENGINEERING MATHEMATICS - I,main_04.pdf
+BMIAS0203,MIAS,M.Tech (Integrated),II,2023-2024,Engineering Mathematics-II,main_04.pdf
+BMICA0104,MICA,MCA,I,2023-2024,Problem Solving and Algorithmic Thinking,main_04.pdf
+BMICA0201,MICA,MCA,II,2023-2024,Internet and Web Designing,main_04.pdf
+BMICA0203,MICA,MCA,II,2023-2024,Basic Mathematics-II,main_04.pdf
+BMICA0204,MICA,MCA,II,2023-2024,Design Thinking-I,main_04.pdf
+BMICSE0103,MICSE,M.Tech (Integrated),I,2023-2024,Design Thinking-I,main_04.pdf
+BMIEC0201,MIEC,M.Tech (Integrated),II,2023-2024,Basic Electrical and Electronics Engineering,main_04.pdf
+AAS0201A,AS,B.Tech,II,2020-2021,Engineering Physics,main_04.pdf
+AAS0202,AS,B.Tech,II,2020-2021,Engineering Chemistry,main_04.pdf
+AAS0203,AS,B.Tech,II,2020-2021,Engineering Mathematics-II,main_04.pdf
+ACSBS0204,CSBS,B.Tech,II,2020-2021,Business Communication & Value Science - II,main_04.pdf
+AMBA0105,BBA,MBA,I,2020-2021,Communication for Managers,main_04.pdf
+AMBA0201,BBA,MBA,II,2020-2021,Business Environment and Legal Aspects of Business,main_04.pdf
+AMBA0203,BBA,MBA,II,2020-2021,Entrepreneurship Development,main_04.pdf
+AMTAI0201,TAI,M.Tech,II,2022-2023,Machine Learning,main_10.pdf
+AMTAI0214,TAI,M.Tech,II,2021-2022,Introduction to Blockchain,main_13.pdf
+AMICSE0801,CSE,M.Tech,VIII,2023-2024,Computer Vision,main_04.pdf
+ANC0802,CY,B.Tech,VIII,2023-2024,CRM Fundamentals,main_04.pdf
+AOE0868,OE,B.Tech,VIII,2023-2024,Internet of Things,main_04.pdf
+AOE0870,OE,B.Tech,VIII,2023-2024,Finance for Engineers,main_04.pdf
+AMBA0101,BBA,MBA,I,2020-2021,Management Principles & Organizational Behaviour (MPOB),main_04.pdf
+AMBA0102,BBA,MBA,I,2020-2021,Code: AMBA0103,main_04.pdf
+AMBA0103,BBA,MBA,I,2020-2021,INTRODUCTION TO BUSINESS ANALYTICS,main_04.pdf
+AMBA0104,BBA,MBA,I,2021-2022,Marketing Management,main_05.pdf
+AMBA0106,BBA,MBA,I,2020-2021,FINANCIAL ACCOUNTING & ANALYSIS,main_05.pdf
+AMBA0107,BBA,MBA,I,2020-2021,DESIGN THINKING,main_05.pdf
+AMCA0101,MCA,MCA,I,2021-2022,Fundamentals of Computer and Programming in C,main_05.pdf
+AMCA0102,MCA,MCA,I,2021-2022,Operating System,main_05.pdf
+AMCA0103,MCA,MCA,,2020-2021,Principles of Communication and Management,main_05.pdf
+AMCA0104,MCA,MCA,I,2020-2021,COMPUTER SYSTEM ORGANIZATION,main_05.pdf
+AMCA0105,MCA,MCA,I,2020-2021,DISCRETE MATHEMATICS,main_05.pdf
+AMIEC0101,ECE,M.Tech (Integrated),I,2021-2022,Basic Electrical and Electronics Engineering,main_05.pdf
+AMTA10111,TA,UNKNOWN,I,2020-2021,SOFT COMPUTING,main_05.pdf
+AMTBT0101,TBT,M.Tech,I,2021-2022,Applied Biochemistry & Molecular Biology,main_05.pdf
+AMTBT0102,TBT,M.Tech,I,2021-2022,Bioprocess Engineering & Technology,main_05.pdf
+AMTBT0111,TBT,M.Tech,I,2021-2022,Immunology & Vaccine Technology,main_05.pdf
+AMTBT0115,TBT,M.Tech,I,2021-2022,Nano Biotechnology & Toxicology,main_05.pdf
+AMTCC0101,TCC,M.Tech,I,2021-2022,Research Process and Methodology,main_05.pdf
+AMTCSE0101,TCSE,M.Tech,I,2021-2022,Advance Data Structures and Algorithms,main_05.pdf
+AMTCSE0102,TCSE,M.Tech,I,2021-2022,Artificial Intelligence,main_05.pdf
+AMTCSE0111,TCSE,M.Tech,I,2021-2022,Cloud Computing,main_05.pdf
+AMTCSE0114,TCSE,M.Tech,I,2021-2022,Data Warehousing & Data Mining,main_05.pdf
+AMTME0101,TME,M.Tech,I,2021-2022,Simulation Modelling and Analysis,main_05.pdf
+AMTME0102,TME,M.Tech,I,2021-2022,Design of Experiments,main_05.pdf
+AMTME0113,TME,M.Tech,I,2021-2022,Renewable Energy System,main_05.pdf
+AMTME0118,TME,M.Tech,I,2021-2022,Advanced I.C. Engines,main_05.pdf
+AMTVL0101,TVL,M.Tech,I,2021-2022,CMOS Digital VLSI Design,main_05.pdf
+AMTVL0102,TVL,M.Tech,I,2021-2022,Advanced Digital Design using Verilog,main_05.pdf
+AMTVL0112,TVL,M.Tech,I,2021-2022,MOS Device Modeling,main_05.pdf
+AMTVL0114,TVL,M.Tech,I,2021-2022,Microchip Fabrication Technology,main_05.pdf
+AMCA0103N,MCA,B.Tech,I,2021-2022,Professional Communication and Management Principles,main_05.pdf
+ABT0402,BT,B.Tech,IV,2021-2022,Immunology & Immunotechnology,main_06.pdf
+ACSBS0403,CSBS,B.Tech,IV,2021-2022,Operating Systems,main_06.pdf
+ACSBS0405,CSBS,B.Tech,IV,2021-2022,"Introduction to Innovation, IP Management & Entrepreneurship",main_06.pdf
+ACSBS0406,CSBS,B.Tech,IV,2021-2022,Marketing Research & Marketing Management,main_06.pdf
+ACSBS0407,CSBS,B.Tech,IV,2021-2022,Business Communication & Value Science-III,main_06.pdf
+AMBABI0411,BBA,BBA,IV,2021-2022,Cyber Security,main_06.pdf
+AMBABI0412,BBA,BBA,IV,2021-2022,Data Base Technology,main_06.pdf
+AMBABI0413,BBA,BBA,IV,2021-2022,System Analysis & Design,main_06.pdf
+AMBAFM0412,BBA,BBA,IV,2021-2022,Working Capital Management,main_06.pdf
+AMBAFM0413,BBA,BBA,IV,2021-2022,Financial Derivatives & Risk Management,main_06.pdf
+AMBAHR0413,BBA,BBA,IV,2021-2022,Diversity of Work Force (IHRM),main_06.pdf
+AMBAMK0411,BBA,BBA,IV,2021-2022,Sales & Retail Management,main_06.pdf
+AMBAMK0412,BBA,BBA,IV,2021-2022,Marketing Analytics,main_06.pdf
+AMCA0411,MCA,MCA,IV,2021-2022,RPA Development,main_06.pdf
+AMCA0412,MCA,MCA,IV,2021-2022,CRM Advanced Administration,main_06.pdf
+AMCA0414,MCA,MCA,IV,2021-2022,Connecting Network,main_06.pdf
+AME0402,ME,B.Tech,IV,2021-2022,Fluid Mechanics & Fluid Machines,main_06.pdf
+AME0404,ME,B.Tech,IV,2021-2022,Applied Thermodynamics,main_06.pdf
+AAS0402/AASH0402,AS,B.Tech,IV,2023-2024,Engineering Mathematics- IV,main_06.pdf
+AASL0401/AASLH0401,AS,B.Tech,IV,2023-2024,Technical Communication,main_06.pdf
+ACS0401,UNKNOWN,B.Tech,IV,2023-2024,Cloud Computing Architecture,main_06.pdf
+ACSBS0402N,CSBS,B.Tech,IV,2023-2024,Software Design with UML,main_06.pdf
+ACSE0401/ACSEH0401,CSE,B.Tech,IV,2023-2024,Design and Analysis of Algorithm,main_06.pdf
+ACSE0403A/ACSEH0403A,CSE,B.Tech,IV,2023-2024,Operating System,main_06.pdf
+AMCA0417,MCA,MCA,IV,2023-2024,Business Data Analytics,main_07.pdf
+AMCA0418,MCA,MCA,IV,2023-2024,Software Quality and Testing,main_07.pdf
+AMICA0403,MCA,MCA,IV,2023-2024,Software Engineering & Design,main_07.pdf
+AMICA0404,MCA,MCA,IV,2023-2024,Design Thinking-II,main_07.pdf
+AASL0204,AS,B.Tech,II,2021-2022,Japanese,main_09.pdf
+ACSBS0201,CSBS,B.Tech,II,2021-2022,Statistical Methods,main_09.pdf
+ACSBS0203,CSBS,B.Tech,II,2021-2022,Data Structures & Algorithms,main_09.pdf
+ACSBS0303,CSBS,B.Tech,III,,Computer Organization & Architecture,main_07.pdf
+ACSBS0306,CSBS,B.Tech,III,2021-2022,Formal Language & Automata Theory,main_13.pdf
+ACSE0304,CSE,B.Tech,III,2021-2022,Digital Logic & Circuit Design,main_13.pdf
+ACSE0305,CSE,B.Tech,III,,Computer Organization & Architecture,main_07.pdf
+ACSE0307,CSE,B.Tech,III,2021-2022,Soft Computing,main_13.pdf
+AEC0101/,ECE,B.Tech,I,,Basic Electrical and Electronics Engineering,main_07.pdf
+AEC0613,ECE,B.Tech,VI,2023-2024,ANN & Deep Learning,main_13.pdf
+AMBA0202,BBA,MBA,II,2021-2022,Business Research Methods,main_09.pdf
+AMCA0201N,MCA,MCA,II,2021-2022,Object Oriented Programming with JAVA,main_09.pdf
+AMCANC0201,MCA,MCA,II,2021-2022,Cyber Security,main_09.pdf
+AME0301,ME,B.Tech,III,2021-2022,Manufacturing Technology-I,main_13.pdf
+AMICA0203,MCA,MCA,II,2022-2023,Soft Skills and Personality Development,main_10.pdf
+AMICA0204,MCA,MCA,II,2022-2023,Design Thinking-I,main_10.pdf
+AMTBT0201,TBT,M.Tech,II,2021-2022,Bioinformatics,main_09.pdf
+AMTME0213,TME,M.Tech,II,2021-2022,Advanced Welding Technology,main_09.pdf
+AOE0361,OE,B.Tech,III,2021-2022,Energy Science & Engineering,main_14.pdf
+AASL0203,AS,B.Tech,II,2021-2022,German,main_09.pdf
+ACSE0202Z,CSE,B.Tech,II,,Problem Solving using Advanced Python,main_08.pdf
+ACSE0301,CSE,B.Tech,III,2021-2022,Data Structures,main_14.pdf
+AMBA0205,BBA,MBA,II,2021-2022,Quantitative Techniques for Managers,main_09.pdf
+AMBA0206,BBA,MBA,II,2021-2022,Human Resource Management,main_09.pdf
+AMBA0207,BBA,MBA,II,2021-2022,Management Information System,main_09.pdf
+AMBAMK0313,BBA,MBA,III,2021-2022,Consumer Behavior and Advertising Management,main_13.pdf
+AMCA0202,MCA,MCA,II,2021-2022,Database Management System,main_09.pdf
+AMIASL0202,AS,M.Tech,II,2021-2022,French,main_09.pdf
+AMICSE0202,CSE,M.Tech (Integrated),II,2021-2022,Problem Solving using Advanced Python,main_09.pdf
+ACSBS0206,CSBS,B.Tech,II,2021-2022,Fundamentals of Economics,main_09.pdf
+AMBA0204Z,BBA,MBA,II,2021-2022,Financial Management,main_09.pdf
+AMCA0214,MCA,MCA,II,2021-2022,Fundamentals of Digital Marketing and Analytics,main_09.pdf
+AMCA0215,MCA,MCA,II,2021-2022,Fundamentals of Digital Marketing and Optimization,main_09.pdf
+AMIASL0203,AS,M.Tech,II,2021-2022,German,main_09.pdf
+AMIASL0204,AS,M.Tech,II,2021-2022,Japanese,main_09.pdf
+AMTBT0202,TBT,M.Tech,II,2021-2022,"Entrepreneurship, IPR & Biosafety",main_09.pdf
+AMTBT0211,TBT,M.Tech,II,2021-2022,Genetic Engineering,main_09.pdf
+AMTBT0215,TBT,M.Tech,II,2021-2022,Enzyme Technology & Industrial Application,main_09.pdf
+AMTBT0217,TBT,M.Tech,II,2021-2022,Cell & Tissue Culture Techniques,main_09.pdf
+AMTCSE0201,TCSE,M.Tech,II,2021-2022,High Performance Computing,main_09.pdf
+AMTCSE0202,TCSE,M.Tech,II,2021-2022,Robotic Process Automation,main_09.pdf
+AMTCSE0211,TCSE,M.Tech,II,2021-2022,Software Project & Management,main_09.pdf
+AMTCSE0213,TCSE,M.Tech,II,2021-2022,Digital Image Processing,main_09.pdf
+AMTCSE0216,TCSE,M.Tech,II,2021-2022,Advanced Computer Architecture,main_09.pdf
+AMTME0201,TME,M.Tech,II,2021-2022,Digital Manufacturing and Automation,main_09.pdf
+AMTME0202,TME,M.Tech,II,2021-2022,Composite Materials,main_09.pdf
+AMTME0216,TME,M.Tech,II,2021-2022,Optimization Techniques,main_09.pdf
+AMTME0222,TME,M.Tech,II,2021-2022,Hybrid Vehicle Technology,main_09.pdf
+AMTVL0201,TVL,M.Tech,II,2021-2022,Digital Design Using FPGA and CPLD,main_09.pdf
+AMTVL0202,TVL,M.Tech,II,2021-2022,Low Power VLSI Design,main_09.pdf
+AMTVL0211,TVL,M.Tech,II,2021-2022,VLSI Testing and Testability,main_09.pdf
+AMTVL0215,TVL,M.Tech,II,2021-2022,Nanoscale Devices: Modeling &Simulation,main_09.pdf
+AMTVL0218,TVL,M.Tech,II,2021-2022,Real Time Operating System,main_09.pdf
+ANC0201,CY,B.Tech,II,2021-2022,Environmental Sciences,main_09.pdf
+AMBA0208,BBA,MBA,II,2022-2023,Operations and Supply Chain Management,main_09.pdf
+AMCA0214Z,MCA,MCA,II,2022-2023,Fundamentals of Digital Marketing and Analytics,main_10.pdf
+AMCA0218,MCA,MCA,II,2022-2023,Software Testing,main_10.pdf
+AMIBA0201,BBA,MBA,II,2022-2023,Business Communication,main_10.pdf
+AMICA0201,MCA,MCA,II,2022-2023,Problem Solving Using Python,main_10.pdf
+AMICA0202,MCA,MCA,II,2022-2023,Internet and Web Designing,main_10.pdf
+AMICA0205,MCA,MCA,II,2022-2023,Basic Mathematics-II,main_10.pdf
+AMTAI0212,TAI,M.Tech,II,2022-2023,Neural Network,main_10.pdf
+AMTCY0216,TCY,M.Tech,II,2022-2023,Information Security,main_10.pdf
+AMTBT0204,TBT,M.Tech,II,2023-2024,Cell &Tissue Culture Techniques,main_11.pdf
+AMTBT0220,TBT,M.Tech,II,2023-2024,"Entrepreneurship, IPR & Biosafety",main_11.pdf
+AMTME0211,TME,M.Tech,II,2023-2024,Advanced Finite Element Analysis,main_11.pdf
+AMTME0214,TME,M.Tech,II,2023-2024,Computational Fluid Dynamics,main_11.pdf
+AMTME0218,TME,M.Tech,II,2023-2024,Management Information System,main_11.pdf
+BASL0202,AS,B.Tech,II,2023-2024,French,main_11.pdf
+BASL0204,AS,B.Tech,II,2023-2024,Japanese,main_11.pdf
+BBT0201,BT,B.Tech,II,2023-2024,Introduction to Biotechnology,main_11.pdf
+BCSBS0202,CSBS,B.Tech,II,2023-2024,Principles of Electronics,main_11.pdf
+BCSBS0203,CSBS,B.Tech,II,2023-2024,Data Structures & Algorithms,main_11.pdf
+BCSBS0205,CSBS,B.Tech,II,2023-2024,Linear Algebra,main_11.pdf
+BCSBS0206,CSBS,B.Tech,II,2023-2024,Fundamentals of Economics,main_11.pdf
+BEC0201/BECH0202,ECE,B.Tech,II,2023-2024,Basic Electrical and Electronics Engineering,main_11.pdf
+BMCA0201,MCA,MCA,II,2023-2024,Computer System & Organization,main_11.pdf
+BMIASL0202,MIASL,M.Tech (Integrated),II,2023-2024,French,main_11.pdf
+BMIASL0203,MIASL,M.Tech (Integrated),II,2023-2024,German,main_11.pdf
+BMIASL0204,MIASL,M.Tech (Integrated),II,2023-2024,Japanese,main_11.pdf
+BNC0201,CY,B.Tech,II,2023-2024,Environmental Sciences,main_11.pdf
+BMBIE0201,MBIE,MBA,II,2023-2024,Business Research Methods,main_11.pdf
+BMBIE0202,MBIE,MBA,II,2023-2024,Entrepreneurial Eco-System,main_11.pdf
+BMBIE0203,MBIE,MBA,II,2023-2024,Production and Operations Management,main_11.pdf
+BMBIE0211,MBIE,MBA,II,2023-2024,Digital Marketing,main_11.pdf
+BMBIE0214,MBIE,MBA,II,2023-2024,Indian Financial Market and Services,main_11.pdf
+BMBIE0215,MBIE,MBA,II,2023-2024,Integrated Marketing Communication,main_11.pdf
+BMBIE0216,MBIE,MBA,II,2023-2024,Training and Development,main_11.pdf
+BMBIE0217,MBIE,MBA,II,2023-2024,Strategic Financial Management,main_11.pdf
+BMBIE0218,MBIE,MBA,II,2023-2024,Talent Management,main_11.pdf
+BMBIE0219,MBIE,MBA,II,2023-2024,Venture Growth Strategies,main_11.pdf
+BMBIE0220,MBIE,MBA,II,2023-2024,Social Entrepreneurship,main_11.pdf
+AMBA0204,BBA,MBA,,2020-2021,Financial Management,main_12.pdf
+AMCA0201,MCA,MCA,,2020-2021,Object Oriented Programming,main_12.pdf
+AMCA0203,MCA,MCA,,2020-2021,Data Structures,main_12.pdf
+AMCA0204,MCA,MCA,,2020-2021,Theory of Automata and Formal Languages,main_12.pdf
+AMCA0211,MCA,MCA,,2020-2021,RPA Design & Development,main_12.pdf
+AMCA0212,MCA,MCA,,2020-2021,CRM using Salesforce,main_12.pdf
+AMCA0213,MCA,MCA,,2020-2021,Computer Networks,main_12.pdf
+AMTAI0216,TAI,M.Tech,,2020-2021,Deep Learning,main_12.pdf
+AMTBT0212,TBT,M.Tech,,2020-2021,Applied Food Biotechnology,main_12.pdf
+ACS0301,UNKNOWN,B.Tech,II,2021-2022,Introduction to Cloud Computing,main_13.pdf
+AMBA0302,BBA,BBA,III,2021-2022,"Corporate Governance, Values & Ethics",main_13.pdf
+AMBAHR0312,BBA,BBA,III,2021-2022,Employee Relation and Labor Laws,main_13.pdf
+AMICSE0301,CSE,M.Tech,III,2021-2022,Data Structures,main_13.pdf
+ABT0613,BT,B.Tech,VI,2023-2024,Biofuels & Alcohol Technology,main_13.pdf
+ABT0614,BT,B.Tech,VI,2023-2024,Machine Learning,main_13.pdf
+ACSAI0621/ACSAIH0621,AI,B.Tech,VI,,Big Data,main_13.pdf
+ACSBS0601,CSBS,B.Tech,VI,2023-2024,Artificial Intelligence,main_13.pdf
+ACSBS0603,CSBS,B.Tech,VI,2023-2024,Information Security,main_13.pdf
+ACSBS0604,CSBS,B.Tech,VI,2023-2024,Business Communication & Value Science-IV,main_13.pdf
+ACSBS0605,CSBS,B.Tech,VI,2023-2024,Financial & Cost Accounting,main_13.pdf
+ACSBS0612,CSBS,B.Tech,VI,2023-2024,Modern Web Applications,main_13.pdf
+ACSBS0614,CSBS,B.Tech,VI,2023-2024,Enterprise Systems,main_13.pdf
+ACSE0612/,CSE,B.Tech,VI,2023-2024,Full-Stack Web Development using Laravel with Vue.JS,main_13.pdf
+ACSIOT0601,IOT,B.Tech,VI,2023-2024,IoT Protocols & Its Applications,main_13.pdf
+AME0612,ME,B.Tech,VI,2023-2024,Rapid Prototyping and Manufacturing,main_13.pdf
+AME0614,ME,B.Tech,VI,2023-2024,Product Lifecycle Management,main_13.pdf
+AMICSE0612,CSE,M.Tech (Integrated),VI,2023-2024,Full-Stack Web Development using Laravel with Vue.JS,main_13.pdf
+AMICSE0614,CSE,M.Tech (Integrated),VI,2023-2024,Web Development using MEAN Stack,main_13.pdf
+AOE0665,OE,B.Tech,VI,2023-2024,Soft Skills & Personality Development,main_13.pdf
+ABT0303,BT,B.Tech,III,2021-2022,Genetics and Molecular Biology,main_14.pdf
+ABT0304,BT,B.Tech,III,2021-2022,Bioinformatics,main_14.pdf
+ABT0306,BT,B.Tech,III,2021-2022,Plant and Animal Science,main_14.pdf
+ACSBS0301,CSBS,B.Tech,III,2021-2022,Computational Statistics,main_14.pdf
+ACSDS0301,DS,B.Tech,III,2021-2022,Foundations of Data Science,main_14.pdf
+AMBA0301,BBA,MBA,III,2021-2022,Strategic Management,main_14.pdf
+AMBABI0312,BBA,MBA,III,2021-2022,Machine Learning & Artificial Intelligence,main_14.pdf
+AMBAFM0311,BBA,MBA,III,2021-2022,Security and Portfolio Management,main_14.pdf
+AMCA0301,MCA,MCA,III,2021-2022,Software Engineering,main_14.pdf
+AMCA0302,MCA,MCA,III,2021-2022,Web Technology,main_14.pdf
+AMCA0318,MCA,MCA,III,2021-2022,Cloud Computing,main_14.pdf
+AMCA0319,MCA,MCA,,2021-2022,Artificial Intelligence,main_14.pdf
+AMIAS0301A,AS,B.Tech,III,2021-2022,Engineering Mathematics-III,main_14.pdf
+AMICSE0304,CSE,B.Tech,III,2021-2022,Digital Logic & Circuit Design,main_14.pdf
+GPG032,GPG,MCA,,2023-2024,Human Resource Management,main_14.pdf
+GPG033,GPG,MCA,,2023-2024,Marketing Management-Global Perspectives,main_14.pdf
+GPG034,GPG,MCA,,2023-2024,Global Finance & Foreign Currency,main_14.pdf
+GPG035,GPG,MCA,,2023-2024,Introduction to Business Analytics,main_14.pdf
+GPG036,GPG,MCA,,2023-2024,Introduction to Logistics & Supply Chain Management,main_14.pdf
+GPG037,GPG,MCA,,2023-2024,Business Research Methods,main_14.pdf
+GPG038,GPG,MCA,,2023-2024,Foreign Language,main_14.pdf
+NPGDM032,NPGDM,MCA,,2023-2024,Human Resource Management,main_14.pdf
+NPGDM033,NPGDM,MCA,,2023-2024,Digital Marketing,main_14.pdf
+NPGDM034,NPGDM,MCA,,2023-2024,Financial Management,main_14.pdf
+NPGDM035,NPGDM,MCA,,2023-2024,Introduction to Business Analytics,main_14.pdf
+NPGDM036,NPGDM,MCA,,2023-2024,Introduction to Logistics & Supply Chain Management,main_14.pdf
+NPGDM037,NPGDM,MCA,,2023-2024,Business Research Methods,main_14.pdf
+NPGDM038,NPGDM,MCA,,2023-2024,Personal Grooming and Business Etiquette,main_14.pdf
