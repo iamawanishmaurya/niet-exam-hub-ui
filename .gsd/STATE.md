@@ -1,7 +1,10 @@
 ## Current Position
-- **Phase**: None
-- **Task**: Phase 7 added
-- **Status**: Ready for planning
+- **Phase**: 7
+- **Task**: Planning complete
+- **Status**: Ready for execution
+
+## Plans Created
+- `7-PLAN.md` — PPT Metadata and Faculty Extraction Fixes
 
 ## Next Steps
-1. Create PLAN for Phase 7: `/plan 7`
+1. /execute 7

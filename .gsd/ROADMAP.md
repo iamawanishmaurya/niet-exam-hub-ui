@@ -74,5 +74,15 @@
 **Verification**:
 - [x] `npm run build` exits 0 (both waves)
 
+---
 
+### Phase 7: PPT Metadata and Faculty Extraction Fixes
+**Status**: ⬜ Planned
+**Objective**: Fix duplicate branch/course tags in PPT display (e.g. replacing redundant "B.Tech" tags with unit/year), and fix the faculty name metadata mapping so it displays correctly.
+**Depends on**: Phase 6
 
+**Tasks**:
+- [ ] Implement `7-PLAN.md` (Update types, hook mapping, and badge rendering logic)
+
+**Verification**:
+- UI tests running `/ppt/search` to verify visually correct tags and metadata.
