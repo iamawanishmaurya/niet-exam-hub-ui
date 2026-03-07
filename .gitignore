@@ -34,3 +34,8 @@ Thumbs.db
 
 assets/pptx/
 public/pptx/
+
+/.gsd
+/.gemini
+/.agent 
+/niet-ppt-data-temp

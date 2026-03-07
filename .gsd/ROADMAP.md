@@ -91,12 +91,13 @@
 ---
 
 ### Phase 8: Deep PDF Analysis & Faculty Data Extraction
-**Status**: ⬜ Not Started
+**Status**: ✅ Completed
 **Objective**: Clone the `niet-ppt-data` repository and perform deep analysis on the first 5 pages of the raw PPT/PDF files to extract real faculty names, teachers, and department names. Then generate an updated `ppt_asset_mapping.json` using the newly discovered metadata.
 **Depends on**: Phase 7
 
 **Tasks**:
-- [ ] TBD (run /plan 8 to create)
+- [x] Implement `/plan 8` python extraction loop using PyMuPDF
 
 **Verification**:
-- TBD
+- [x] Run python scripts against PDFs to verify extraction accuracy
+- [x] Run `npm run build` after pushing the data objects into the codebase
