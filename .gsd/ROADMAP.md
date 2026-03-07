@@ -49,12 +49,25 @@
 ---
 
 ### Phase 5: Fix 404 Not Found on PDFs
-**Status**: ⬜ Not Started
+**Status**: ⬜ Completed
 **Objective**: Fix the `404: Not Found` error when attempting to preview or download PDFs. This indicates the reconstructed GitHub raw URLs are slightly incorrect (e.g., missing a folder path like `assets/` or incorrect branch/repo).
 **Depends on**: Phase 4
 
 **Tasks**:
-- [ ] TBD (run /plan 5 to create)
+- [x] Repaired prefix URLs from asset map logic
+
+**Verification**:
+- Previews and downloads work
+
+---
+
+### Phase 6: Assorted UI and Content Fixes
+**Status**: ⬜ Not Started
+**Objective**: Fix the preview modal action, reorder the navigation bar, and fix missing faculty name metadata.
+**Depends on**: Phase 5
+
+**Tasks**:
+- [ ] TBD (run /plan 6 to create)
 
 **Verification**:
 - TBD
