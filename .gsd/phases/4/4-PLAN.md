@@ -60,12 +60,12 @@ Load for context:
 
 <verification>
 After all tasks, verify:
-- [ ] No references to `docs.google.com/viewer` exist in the codebase.
-- [ ] `PdfPreviewModal` implements a loading state while fetching the blob.
-- [ ] `URL.revokeObjectURL` is used appropriately to clean up memory.
+- [x] No references to `docs.google.com/viewer` exist in the codebase.
+- [x] `PdfPreviewModal` implements a loading state while fetching the blob.
+- [x] `URL.revokeObjectURL` is used appropriately to clean up memory.
 </verification>
 
 <success_criteria>
-- [ ] All tasks verified
-- [ ] Must-haves confirmed
+- [x] All tasks verified
+- [x] Must-haves confirmed
 </success_criteria>
