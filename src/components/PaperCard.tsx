@@ -101,8 +101,13 @@ const PaperCard = ({
               </h3>
             </div>
             {paper.subject_code && (
-              <p className="text-sm text-muted-foreground font-mono mb-2">
+              <p className="text-sm text-muted-foreground font-mono mb-1">
                 {paper.subject_code}
+              </p>
+            )}
+            {paper.faculty_name && paper.faculty_name !== "Unknown" && (
+              <p className="text-sm text-muted-foreground flex items-center gap-1.5 mt-1">
+                By {paper.faculty_name}
               </p>
             )}
           </div>
@@ -138,11 +143,6 @@ const PaperCard = ({
         {paper.unit && (
           <Badge variant="default" className="text-xs bg-primary/80">
             {paper.unit}
-          </Badge>
-        )}
-        {paper.faculty_name && paper.faculty_name !== "Unknown" && (
-          <Badge variant="outline" className="text-xs">
-            {paper.faculty_name}
           </Badge>
         )}
         {(paper.type === "exam" || paper.type === "both") && !window.location.pathname.includes('/ppt') && (
