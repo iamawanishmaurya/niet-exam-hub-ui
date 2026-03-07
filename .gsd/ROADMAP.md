@@ -129,3 +129,15 @@
 **Verification**:
 - [x] `npm run build` passes locally
 
+---
+
+### Phase 11: Fix Faculty Search Filtering
+**Status**: ⬜ Not Started
+**Objective**: Fix the search filtering logic in `useExamPapers` hook so that it indexes and successfully matches against the `faculty_name` / `teacher_name` attribute. Currently clicking a faculty name yields 0 results.
+**Depends on**: Phase 10
+
+**Tasks**:
+- [ ] TBD (run /plan 11 to create)
+
+**Verification**:
+- TBD
