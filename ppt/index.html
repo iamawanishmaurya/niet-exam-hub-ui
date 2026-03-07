@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Presentations - NIET Study Material</title>
+    <meta name="description"
+        content="Upload and contribute PPT, PPTX, or PDF study materials to the NIET Study Material database.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0 30px;
+        }
+
+        .header a {
+            color: #7c9ef5;
+            text-decoration: none;
+            font-size: 0.9em;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .header a:hover {
+            opacity: 1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+            font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 36px;
+            font-size: 1em;
+        }
+
+        .upload-area {
+            border: 2px dashed rgba(124, 158, 245, 0.5);
+            border-radius: 16px;
+            padding: 50px 40px;
+            text-align: center;
+            background: rgba(124, 158, 245, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: #7c9ef5;
+            background: rgba(124, 158, 245, 0.12);
+            transform: scale(1.01);
+        }
+
+        .upload-icon {
+            font-size: 3.5em;
+            margin-bottom: 16px;
+        }
+
+        .upload-text {
+            font-size: 1.1em;
+            color: #e5e7eb;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .upload-hint {
+            color: #6b7280;
+            font-size: 0.875em;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-list {
+            margin-top: 20px;
+        }
+
+        .file-item {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 14px 18px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .file-item:hover {
+            background: rgba(255, 255, 255, 0.09);
+        }
+
+        .file-info {
+            flex: 1;
+        }
+
+        .file-name {
+            font-weight: 500;
+            color: #e5e7eb;
+            margin-bottom: 4px;
+            font-size: 0.95em;
+            word-break: break-all;
+        }
+
+        .file-size {
+            color: #6b7280;
+            font-size: 0.8em;
+        }
+
+        .file-remove {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 6px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.82em;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-left: 12px;
+            white-space: nowrap;
+        }
+
+        .file-remove:hover {
+            background: rgba(239, 68, 68, 0.35);
+            border-color: rgba(239, 68, 68, 0.5);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s;
+            margin-top: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        .submit-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(102, 126, 234, 0.45);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .progress-container {
+            display: none;
+            margin-top: 20px;
+            padding: 20px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+        }
+
+        .progress-container.active {
+            display: block;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.82em;
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.875em;
+        }
+
+        .alert {
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .alert.show {
+            display: block;
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.15);
+            color: #6ee7b7;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .alert-error {
+            background: rgba(239, 68, 68, 0.12);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.25);
+        }
+
+        .info-note {
+            background: rgba(124, 158, 245, 0.08);
+            border: 1px solid rgba(124, 158, 245, 0.2);
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 24px;
+            font-size: 0.875em;
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        .info-note strong {
+            color: #7c9ef5;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 20px;
+            }
+
+            h1 {
+                font-size: 1.7em;
+            }
+
+            .upload-area {
+                padding: 36px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="https://nietexamhub.bugmein.me/">← Back to NIET Exam Hub</a>
+    </div>
+
+    <div class="container">
+        <h1>📚 Upload Study Materials</h1>
+        <p class="subtitle">Contribute to NIET Study Material Database</p>
+
+        <div class="info-note">
+            <strong>How it works:</strong> Select or drag-and-drop your PPT, PPTX, or PDF files below. Files will be
+            submitted to the maintainers for review and addition to the database.
+        </div>
+
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Click to select files or drag & drop here</div>
+            <div class="upload-hint">Supported formats: PPT, PPTX, PDF</div>
+            <input type="file" id="fileInput" multiple accept=".ppt,.pptx,.pdf">
+        </div>
+
+        <div class="file-list" id="fileList"></div>
+
+        <button class="submit-btn" id="submitBtn" disabled>Upload & Submit Files</button>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            <div class="progress-text" id="progressText">Preparing upload...</div>
+        </div>
+
+        <div class="alert alert-success" id="successMessage"></div>
+        <div class="alert alert-error" id="errorMessage"></div>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+        const submitBtn = document.getElementById('submitBtn');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        let selectedFiles = [];
+
+        // Click to upload
+        uploadArea.addEventListener('click', () => fileInput.click());
+
+        // Drag and drop
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', (e) => {
+            if (!uploadArea.contains(e.relatedTarget)) {
+                uploadArea.classList.remove('dragover');
+            }
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+            fileInput.value = ''; // reset so same file can be re-added after removal
+        });
+
+        function handleFiles(files) {
+            Array.from(files).forEach(file => {
+                const validTypes = [
+                    'application/pdf',
+                    'application/vnd.ms-powerpoint',
+                    'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+                ];
+                const ext = file.name.split('.').pop().toLowerCase();
+                const validExts = ['pdf', 'ppt', 'pptx'];
+
+                if (validTypes.includes(file.type) || validExts.includes(ext)) {
+                    if (!selectedFiles.find(f => f.name === file.name && f.size === file.size)) {
+                        selectedFiles.push(file);
+                    }
+                }
+            });
+            updateFileList();
+        }
+
+        function updateFileList() {
+            fileList.innerHTML = '';
+            selectedFiles.forEach((file, index) => {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                fileItem.innerHTML = `
+                    <div class="file-info">
+                        <div class="file-name">📄 ${escapeHtml(file.name)}</div>
+                        <div class="file-size">${formatFileSize(file.size)}</div>
+                    </div>
+                    <button class="file-remove" onclick="removeFile(${index})">Remove</button>
+                `;
+                fileList.appendChild(fileItem);
+            });
+            submitBtn.disabled = selectedFiles.length === 0;
+        }
+
+        function removeFile(index) {
+            selectedFiles.splice(index, 1);
+            updateFileList();
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.appendChild(document.createTextNode(str));
+            return div.innerHTML;
+        }
+
+        submitBtn.addEventListener('click', async () => {
+            if (selectedFiles.length === 0) return;
+
+            submitBtn.disabled = true;
+            progressContainer.classList.add('active');
+            successMessage.classList.remove('show');
+            errorMessage.classList.remove('show');
+
+            const formData = new FormData();
+            selectedFiles.forEach(file => formData.append('files', file));
+
+            try {
+                progressText.textContent = 'Uploading files...';
+                progressFill.style.width = '20%';
+                progressFill.textContent = '20%';
+
+                const response = await fetch('/.netlify/functions/process-upload', {
+                    method: 'POST',
+                    body: formData
+                }).catch(() => fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                }));
+
+                progressFill.style.width = '70%';
+                progressFill.textContent = '70%';
+                progressText.textContent = 'Processing files...';
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    progressFill.style.width = '100%';
+                    progressFill.textContent = '100%';
+                    progressText.textContent = 'Complete!';
+
+                    successMessage.textContent = `✅ Successfully submitted ${result.processed || selectedFiles.length} file(s)! Thank you for contributing.`;
+                    successMessage.classList.add('show');
+
+                    selectedFiles = [];
+                    updateFileList();
+
+                    setTimeout(() => progressContainer.classList.remove('active'), 2500);
+                } else {
+                    throw new Error(result.error || `Upload failed (${response.status})`);
+                }
+            } catch (error) {
+                errorMessage.textContent = `❌ Error: ${error.message}. Please try again or contact the maintainer.`;
+                errorMessage.classList.add('show');
+                progressContainer.classList.remove('active');
+            } finally {
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
