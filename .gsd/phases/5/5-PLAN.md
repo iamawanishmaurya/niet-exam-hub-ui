@@ -47,10 +47,10 @@ Load for context:
 
 <verification>
 After all tasks, verify:
-- [ ] No 404s present when fetching raw URL. Verify logic matches string formatting properly.
+- [x] No 404s present when fetching raw URL. Verify logic matches string formatting properly.
 </verification>
 
 <success_criteria>
-- [ ] All tasks verified
-- [ ] Must-haves confirmed
+- [x] All tasks verified
+- [x] Must-haves confirmed
 </success_criteria>

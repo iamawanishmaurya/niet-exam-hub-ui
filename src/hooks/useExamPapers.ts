@@ -114,7 +114,22 @@ const normalizeExtractedData = (
       : "https://raw.githubusercontent.com/Niet-College/niet-ppt-data/main/";
 
     const processedPaths = assetPaths?.map(p => {
-      const cleanPath = p.path.startsWith('/') ? p.path.slice(1) : p.path;
+      let cleanPath = p.path;
+      // Strip leading slashes
+      if (cleanPath.startsWith('/')) {
+        cleanPath = cleanPath.slice(1);
+      }
+
+      // Strip the legacy 'assets/' prefix if it's there
+      if (mode === "exam" && cleanPath.startsWith('assets/')) {
+        cleanPath = cleanPath.slice('assets/'.length);
+      }
+
+      // Strip the legacy 'pptx/Ppt/' prefix if it's there
+      if (mode === "ppt" && cleanPath.startsWith('pptx/Ppt/')) {
+        cleanPath = cleanPath.slice('pptx/Ppt/'.length);
+      }
+
       return {
         ...p,
         path: `${baseUrl}${cleanPath}`
