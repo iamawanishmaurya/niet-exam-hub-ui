@@ -18,3 +18,17 @@
 ### Phase 2: Fix Downloader and Previewer
 **Status**: ⬜ Not Started
 **Objective**: Overcome cross-origin restrictions for `PdfPreviewModal.tsx` and `PaperCard.tsx` (using URL fetching for blobs if possible, or public proxy like Google Docs Viewer for `<iframe/>`).
+
+---
+
+### Phase 3: Remove Local PDF Files
+**Status**: ⬜ Not Started
+**Objective**: Remove the local PDF files from the repository to reduce the project footprint, as they are now being served dynamically from GitHub.
+**Depends on**: Phase 2
+
+**Tasks**:
+- [ ] TBD (run /plan 3 to create)
+
+**Verification**:
+- TBD
+
