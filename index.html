@@ -53,6 +53,39 @@
 
 <body>
   <div id="root"></div>
+  <script>
+    // Inject Upload nav link after React renders navigation
+    (function () {
+      var UPLOAD_HREF = '/ppt/';
+      var UPLOAD_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>';
+      var UPLOAD_CLASSES = 'px-4 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-1.5 text-muted-foreground hover:text-foreground hover:bg-accent/50';
+
+      function addUploadLink(nav) {
+        if (nav.querySelector('a[href="' + UPLOAD_HREF + '"]')) return; // already added
+        var link = document.createElement('a');
+        link.href = UPLOAD_HREF;
+        link.className = UPLOAD_CLASSES;
+        link.innerHTML = UPLOAD_SVG + '<span class="hidden sm:inline">Upload</span>';
+        nav.appendChild(link);
+      }
+
+      function findAndInject() {
+        var navs = document.querySelectorAll('nav.flex');
+        navs.forEach(function (nav) {
+          if (nav.querySelector('a[href*="/home"]') || nav.querySelector('a[href*="/search"]')) {
+            addUploadLink(nav);
+          }
+        });
+      }
+
+      // Try immediately and on DOM changes
+      var observer = new MutationObserver(findAndInject);
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      // Also try after page navigation (SPA)
+      window.addEventListener('popstate', function () { setTimeout(findAndInject, 100); });
+    })();
+  </script>
 </body>
 
 </html>
