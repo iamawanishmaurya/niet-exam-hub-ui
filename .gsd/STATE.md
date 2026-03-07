@@ -1,11 +1,13 @@
 ## Current Position
-- **Phase**: 6
-- **Task**: Planning complete
-- **Status**: Ready for execution
+- **Phase**: 6 (completed)
+- **Task**: All tasks complete
+- **Status**: Verified
 
-## Plans Created
-- `6.1-PLAN.md` — Fix preview modal description text + reorder navbar (wave 1)
-- `6.2-PLAN.md` — Add optional faculty_name type + PaperCard badge (wave 2)
+## Last Session Summary
+Phase 6 executed successfully. 2 plans, 4 tasks completed.
+- Modal description cleaned up (no more raw URL in header/footer)
+- Nav reordered: Home → Papers → About → Bulk → Upload
+- `faculty_name` optional field added across types, hook, and PaperCard
 
 ## Next Steps
-1. /execute 6
+1. All roadmap phases complete — run `/verify 6` or deploy

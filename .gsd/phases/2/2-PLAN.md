@@ -82,11 +82,11 @@ Load for context:
 
 <verification>
 After all tasks, verify:
-- [ ] Google Docs viewer is integrated into the modal.
-- [ ] Blobs are generated via fetch to enforce the download filename.
+- [x] Google Docs viewer is integrated into the modal.
+- [x] Blobs are generated via fetch to enforce the download filename.
 </verification>
 
 <success_criteria>
-- [ ] All tasks verified
-- [ ] Must-haves confirmed
+- [x] All tasks verified
+- [x] Must-haves confirmed
 </success_criteria>

@@ -62,15 +62,17 @@
 ---
 
 ### Phase 6: Assorted UI and Content Fixes
-**Status**: ⬜ Not Started
+**Status**: ✅ Completed
 **Objective**: Fix the preview modal action, reorder the navigation bar, and fix missing faculty name metadata.
 **Depends on**: Phase 5
 
 **Tasks**:
-- [ ] TBD (run /plan 6 to create)
+- [x] Fixed PdfPreviewModal description — replaced raw URL with friendly text
+- [x] Reordered Header nav: Home → Papers → About → Bulk → Upload
+- [x] Added optional `faculty_name` field to types and PaperCard badge
 
 **Verification**:
-- TBD
+- [x] `npm run build` exits 0 (both waves)
 
 
 

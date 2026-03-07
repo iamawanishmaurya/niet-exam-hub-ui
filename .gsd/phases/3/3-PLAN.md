@@ -46,10 +46,10 @@ Load for context:
 
 <verification>
 After all tasks, verify:
-- [ ] No large static PDFs/PPTs in the tree.
+- [x] No large static PDFs/PPTs in the tree.
 </verification>
 
 <success_criteria>
-- [ ] All tasks verified
-- [ ] Must-haves confirmed
+- [x] All tasks verified
+- [x] Must-haves confirmed
 </success_criteria>

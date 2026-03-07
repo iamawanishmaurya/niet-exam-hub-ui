@@ -135,6 +135,11 @@ const PaperCard = ({
             {paper.branch}
           </Badge>
         )}
+        {paper.faculty_name && (
+          <Badge variant="outline" className="text-xs">
+            {paper.faculty_name}
+          </Badge>
+        )}
         <Badge variant="default" className="text-xs">
           {getTypeBadge()}
         </Badge>

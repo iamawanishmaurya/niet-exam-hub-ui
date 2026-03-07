@@ -214,6 +214,7 @@ const toDisplayPaper = (paper: NormalizedPaper, index: number): DisplayPaper => 
   paths: paper.paths,
   primaryPath: paper.path || "",
   primaryFilename: paper.filename || `${paper.subject_code}.pdf`,
+  faculty_name: paper.faculty_name,
 });
 
 export const useExamPapers = (initialFilters?: Partial<FilterOptions>) => {
