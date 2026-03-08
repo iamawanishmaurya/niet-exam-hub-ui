@@ -242,3 +242,20 @@
 **Verification**:
 - Both the domain `nietexamhub.bugmein.me` and the GH Pages url `niet-college.github.io/niet-exam-hub-ui/` load the app successfully.
 
+
+---
+
+### Phase 18: UI Adjustments for About and Theme Toggle
+**Status**: ⬜ Not Started
+**Objective**: Separate the Niet-College link from Collaborators in the About page as it represents the project, and simplify the theme toggle to switch directly between light and dark modes on click instead of using a dropdown.
+**Depends on**: Phase 17
+
+**Tasks**:
+- [ ] Update `About.tsx` to give Niet-College its own 'Project' section.
+- [ ] Update `ThemeToggle.tsx` to be a simple button that toggles between light and dark.
+- [ ] Push changes.
+
+**Verification**:
+- Theme toggle works in one click.
+- About page layout is correct.
+

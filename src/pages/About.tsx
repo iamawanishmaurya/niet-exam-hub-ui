@@ -149,18 +149,31 @@ const About = () => {
             </div>
           </motion.div>
 
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }} className="mt-12">
+            <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">Project Repository</h2>
+            <div className="flex justify-center items-center">
+              <motion.a href="https://github.com/Niet-College/niet-exam-hub-ui" target="_blank" rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}
+                className="w-full sm:w-auto">
+                <Button variant="default" size="lg" className="w-full sm:w-auto gap-2 transition-all">
+                  <Github className="h-5 w-5" />
+                  <span>Niet-College</span>
+                </Button>
+              </motion.a>
+            </div>
+          </motion.div>
+
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9 }} className="mt-12">
             <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">Collaborators</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               {[
-                { name: "Niet-College", href: "https://github.com/Niet-College", primary: true },
                 { name: "Awanish Kumar Maurya", href: "https://github.com/iamawanishmaurya" },
                 { name: "Jai Saxena", href: "https://github.com/hello-jai" },
               ].map((c, i) => (
                 <motion.a key={c.name} href={c.href} target="_blank" rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 + i * 0.1 }}
                   className="w-full sm:w-auto">
-                  <Button variant={c.primary ? "default" : "outline"} className="w-full sm:w-auto gap-2 transition-all">
+                  <Button variant="outline" className="w-full sm:w-auto gap-2 transition-all hover:bg-accent">
                     <Github className="h-5 w-5" />
                     <span>{c.name}</span>
                   </Button>
