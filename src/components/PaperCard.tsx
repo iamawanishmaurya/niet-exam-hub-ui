@@ -162,7 +162,7 @@ const PaperCard = ({
             {paper.unit}
           </Badge>
         )}
-        {(paper.type === "exam" || paper.type === "both") && !location.pathname.includes('/ppt') && (
+        {paper.type && !location.pathname.includes('/ppt') && (
           <Badge variant="default" className="text-xs">
             {getTypeBadge()}
           </Badge>
@@ -205,7 +205,7 @@ const PaperCard = ({
                       className="cursor-pointer"
                     >
                       <Eye className="h-4 w-4 mr-2" />
-                      View: {pathItem.filename} ({pathItem.type === "cop" ? "COP" : "Exam"})
+                      View: {pathItem.filename} {!location.pathname.includes('/ppt') && `(${pathItem.type === "cop" ? "COP" : "Exam"})`}
                     </DropdownMenuItem>
                     <DropdownMenuItem
                       onClick={() => handleDownload(pathItem.path, pathItem.filename)}
@@ -217,7 +217,7 @@ const PaperCard = ({
                       ) : (
                         <Download className="h-4 w-4 mr-2" />
                       )}
-                      {downloadingFile === pathItem.path ? "Downloading..." : `Download: ${pathItem.filename} (${pathItem.type === "cop" ? "COP" : "Exam"})`}
+                      {downloadingFile === pathItem.path ? "Downloading..." : `Download: ${pathItem.filename} ${!location.pathname.includes('/ppt') ? `(${pathItem.type === "cop" ? "COP" : "Exam"})` : ""}`}
                     </DropdownMenuItem>
                     {index < paper.paths.length - 1 && <DropdownMenuSeparator />}
                   </div>
