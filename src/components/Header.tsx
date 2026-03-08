@@ -186,6 +186,7 @@ const Header = () => {
 
         {/* Right side — mode switcher + theme toggle (Desktop) & Mobile Menu */}
         <div className="flex items-center gap-2">
+          {/* Desktop Mode Switcher (lg+) */}
           <div className="hidden lg:flex bg-muted/50 p-1 rounded-lg border border-border">
             <button
               onClick={() => handleModeSwitch("exam")}
@@ -206,6 +207,30 @@ const Header = () => {
             >
               <Presentation className="h-4 w-4" />
               PPTs
+            </button>
+          </div>
+
+          {/* Mobile Mode Switcher — always visible on small screens */}
+          <div className="flex lg:hidden bg-muted/50 p-0.5 rounded-lg border border-border">
+            <button
+              onClick={() => handleModeSwitch("exam")}
+              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${mode === "exam"
+                ? "bg-background shadow-sm text-foreground"
+                : "text-muted-foreground hover:text-foreground"
+                }`}
+            >
+              <FileText className="h-3.5 w-3.5" />
+              <span>Exams</span>
+            </button>
+            <button
+              onClick={() => handleModeSwitch("ppt")}
+              className={`flex items-center gap-1 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${mode === "ppt"
+                ? "bg-blue-500/10 text-blue-600 shadow-sm border border-blue-200/50"
+                : "text-muted-foreground hover:text-foreground"
+                }`}
+            >
+              <Presentation className="h-3.5 w-3.5" />
+              <span>PPTs</span>
             </button>
           </div>
 
