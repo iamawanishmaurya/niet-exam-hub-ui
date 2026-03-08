@@ -125,7 +125,7 @@ const Header = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-              {mode === "exam" ? "NIET Exam Hub" : "NIET PPT Hub"}
+              {mode === "exam" ? "NIET EXAM HUB" : "NIET PPT HUB"}
             </motion.span>
           </AnimatePresence>
         </Link>

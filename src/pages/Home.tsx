@@ -55,7 +55,7 @@ const Home = () => {
       <section className="w-full px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-4 tracking-tight">
-            {mode === "exam" ? "NIET Exam Hub" : "NIET PPT HUB"}
+            {mode === "exam" ? "NIET EXAM HUB" : "NIET PPT HUB"}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             {mode === "exam"

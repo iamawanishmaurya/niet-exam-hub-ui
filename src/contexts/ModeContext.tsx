@@ -28,8 +28,8 @@ export const ModeProvider = ({ children }: { children: ReactNode }) => {
 
     useEffect(() => {
         document.title = mode === "exam"
-            ? "NIET Exam Hub - Your Exam Papers Repository"
-            : "NIET PPT Hub - Your Study Materials Repository";
+            ? "NIET EXAM HUB - Your Exam Papers Repository"
+            : "NIET PPT HUB - Your Study Materials Repository";
     }, [mode]);
 
     return (
