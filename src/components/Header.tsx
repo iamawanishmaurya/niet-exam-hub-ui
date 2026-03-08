@@ -1,15 +1,32 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Download, Info, FileText, Presentation, Upload } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useMode } from "@/contexts/ModeContext";
+import { useMode, type Mode } from "@/contexts/ModeContext";
 import ThemeToggle from "@/components/ThemeToggle";
 import nietLogo from "@/assets/niet-logo.png";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { mode, setMode } = useMode();
 
   const prefix = mode === "ppt" ? "/ppt" : "/exam";
+
+  const handleModeSwitch = (newMode: Mode) => {
+    if (newMode === mode) return;
+    setMode(newMode);
+
+    // Auto sync the URL to match the new mode, replacing the category namespace
+    const currentPath = location.pathname;
+    const oldPrefix = newMode === "ppt" ? "/exam" : "/ppt";
+    const newPrefix = newMode === "ppt" ? "/ppt" : "/exam";
+
+    if (currentPath.startsWith(oldPrefix)) {
+      navigate(currentPath.replace(oldPrefix, newPrefix));
+    } else {
+      navigate(`${newPrefix}/home`);
+    }
+  };
 
   const isActive = (path: string) => {
     const full = `${prefix}${path}`;
@@ -100,7 +117,7 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <div className="hidden sm:flex bg-muted/50 p-1 rounded-lg border border-border">
             <button
-              onClick={() => setMode("exam")}
+              onClick={() => handleModeSwitch("exam")}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-all ${mode === "exam"
                 ? "bg-background shadow-sm text-foreground"
                 : "text-muted-foreground hover:text-foreground"
@@ -110,7 +127,7 @@ const Header = () => {
               Exams
             </button>
             <button
-              onClick={() => setMode("ppt")}
+              onClick={() => handleModeSwitch("ppt")}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-all ${mode === "ppt"
                 ? "bg-blue-500/10 text-blue-600 shadow-sm border border-blue-200/50"
                 : "text-muted-foreground hover:text-foreground"
@@ -120,6 +137,7 @@ const Header = () => {
               PPTs
             </button>
           </div>
+
           <ThemeToggle />
         </div>
       </div>

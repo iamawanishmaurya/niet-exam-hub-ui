@@ -8,7 +8,11 @@ import {
 } from "./ui/dialog";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { ExternalLink, Download, Loader2 } from "lucide-react";
+import { ExternalLink, Download, Loader2, Flag } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Textarea } from "./ui/textarea";
+import { toast } from "sonner";
+import { appwriteConfig, databases, ID } from "@/lib/appwrite";
 
 interface PdfPreviewModalProps {
   open: boolean;
@@ -21,11 +25,13 @@ const PdfPreviewModal = ({ open, onOpenChange, pdfPath, title }: PdfPreviewModal
   const [isDownloading, setIsDownloading] = useState(false);
   const [blobUrl, setBlobUrl] = useState<string | null>(null);
   const [isFetchingBlob, setIsFetchingBlob] = useState(false);
+  const [reportText, setReportText] = useState("");
+  const [isReporting, setIsReporting] = useState(false);
+  const [reportOpen, setReportOpen] = useState(false);
 
   useEffect(() => {
     let active = true;
 
-    // Cleanup previous blob URL
     const cleanup = () => {
       if (blobUrl) {
         URL.revokeObjectURL(blobUrl);
@@ -40,7 +46,6 @@ const PdfPreviewModal = ({ open, onOpenChange, pdfPath, title }: PdfPreviewModal
         .then(res => res.blob())
         .then(blob => {
           if (!active) return;
-          // Force application/pdf MIME type to prevent browser from downloading octet-stream
           const pdfBlob = new Blob([blob], { type: "application/pdf" });
           const url = URL.createObjectURL(pdfBlob);
           setBlobUrl(url);
@@ -64,7 +69,6 @@ const PdfPreviewModal = ({ open, onOpenChange, pdfPath, title }: PdfPreviewModal
   const handleDownload = async () => {
     if (pdfPath && !isDownloading) {
       if (blobUrl) {
-        // Fast path: use existing blob url
         const link = document.createElement("a");
         link.href = blobUrl;
         link.download = pdfPath.split("/").pop() || "paper.pdf";
@@ -100,6 +104,36 @@ const PdfPreviewModal = ({ open, onOpenChange, pdfPath, title }: PdfPreviewModal
     }
   };
 
+  const handleReport = async () => {
+    if (!reportText.trim()) {
+      toast.error("Please provide some details about the issue.");
+      return;
+    }
+
+    setIsReporting(true);
+    try {
+      await databases.createDocument(
+        appwriteConfig.databaseId,
+        appwriteConfig.reportsCollectionId,
+        ID.unique(),
+        {
+          pdfId: title,
+          pdfPath: pdfPath,
+          message: reportText,
+          timestamp: new Date().toISOString()
+        }
+      );
+      toast.success("Thank you! Your report has been submitted.");
+      setReportOpen(false);
+      setReportText("");
+    } catch (error) {
+      console.error("Report failed:", error);
+      toast.error("Failed to submit report. Ensure the 'reports' backend collection is configured.");
+    } finally {
+      setIsReporting(false);
+    }
+  };
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-[95vw] h-[92vh] p-0 flex flex-col">
@@ -117,9 +151,36 @@ const PdfPreviewModal = ({ open, onOpenChange, pdfPath, title }: PdfPreviewModal
           />
         </div>
         <DialogFooter className="px-6 py-4 border-t flex items-center justify-between">
-          <small className="text-muted-foreground text-xs hidden sm:block">
-            PDF Document
-          </small>
+          <div className="flex items-center gap-2">
+            <Popover open={reportOpen} onOpenChange={setReportOpen}>
+              <PopoverTrigger asChild>
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-destructive transition-colors">
+                  <Flag className="h-4 w-4 mr-1.5" />
+                  <span className="hidden sm:inline">Report Issue</span>
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-80 p-4" align="start">
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-sm">Report an Issue</h4>
+                  <p className="text-xs text-muted-foreground">Describe what's wrong with this document (e.g., blurry, wrong subject, pages missing).</p>
+                  <Textarea
+                    placeholder="Provide details..."
+                    className="min-h-[80px] resize-none text-sm"
+                    value={reportText}
+                    onChange={(e) => setReportText(e.target.value)}
+                  />
+                  <div className="flex justify-end gap-2">
+                    <Button variant="ghost" size="sm" onClick={() => setReportOpen(false)}>Cancel</Button>
+                    <Button size="sm" onClick={handleReport} disabled={isReporting}>
+                      {isReporting && <Loader2 className="h-3 w-3 mr-1.5 animate-spin" />}
+                      Submit
+                    </Button>
+                  </div>
+                </div>
+              </PopoverContent>
+            </Popover>
+          </div>
+
           <div className="flex gap-2">
             <Button
               variant="outline"
@@ -127,7 +188,7 @@ const PdfPreviewModal = ({ open, onOpenChange, pdfPath, title }: PdfPreviewModal
               className="border-border rounded-lg"
             >
               <ExternalLink className="h-4 w-4 mr-1.5" />
-              Open in new tab
+              <span className="hidden sm:inline">Open in new tab</span>
             </Button>
             <Button
               onClick={handleDownload}

@@ -1,11 +1,11 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
-import { ModeProvider } from "@/contexts/ModeContext";
+import { ModeProvider, useMode } from "@/contexts/ModeContext";
 import NotFound from "./pages/NotFound";
 
 // Lazy load pages for code splitting
@@ -26,6 +26,21 @@ const LoadingSpinner = () => (
   </div>
 );
 
+const RouteSync = () => {
+  const location = useLocation();
+  const { mode, setMode } = useMode();
+
+  useEffect(() => {
+    if (location.pathname.startsWith('/exam') && mode !== 'exam') {
+      setMode('exam');
+    } else if (location.pathname.startsWith('/ppt') && mode !== 'ppt') {
+      setMode('ppt');
+    }
+  }, [location.pathname, mode, setMode]);
+
+  return null;
+};
+
 const App = () => (
   <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
     <QueryClientProvider client={queryClient}>
@@ -34,6 +49,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <HashRouter>
+            <RouteSync />
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
                 {/* Default redirect */}

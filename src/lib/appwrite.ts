@@ -6,7 +6,8 @@ export const appwriteConfig = {
     projectId: '69aa69b40007542c71b8',
     databaseId: 'StudyMaterials',
     collectionId: 'uploads',
-    bucketId: 'ppt-uploads'
+    bucketId: 'ppt-uploads',
+    reportsCollectionId: 'reports' // Needs to be created in Appwrite Database
 };
 
 // Initialize Appwrite Client
