@@ -293,3 +293,18 @@
 - Header logo displays correctly.
 - Visitor counter is clearly visible near the top of the About page.
 
+
+---
+
+### Phase 21: Replace Dead Visitor Counter
+**Status**: ⬜ Not Started
+**Objective**: Replace the dead hits.seeyoufarm.com visitor counter with a working alternative (like api.visitorbadge.io) and ensure it is properly placed above.
+**Depends on**: Phase 20
+
+**Tasks**:
+- [ ] Replace the hits.seeyoufarm URL with a working visitor badge service in `About.tsx`.
+- [ ] Push changes and deploy to `nietcollege`.
+
+**Verification**:
+- Visitor counter loads correctly without SSL errors.
+

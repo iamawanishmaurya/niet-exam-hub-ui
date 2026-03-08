@@ -69,13 +69,11 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               About NIET {mode === "exam" ? "Exam Hub" : "PPT Hub"}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
               Your one-stop solution for accessing, searching, and downloading {mode === "exam" ? "exam papers" : "study materials"} efficiently.
             </p>
-            <div className="flex justify-center items-center">
-              <a href="https://hits.seeyoufarm.com">
-                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fiamawanishmaurya.github.io%2Fniet-exam-hub-ui&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits" />
-              </a>
+            <div className="flex justify-center items-center mb-8">
+              <img src="https://api.visitorbadge.io/api/visitors?path=nietcollege.niet-exam-hub-ui&countColor=%23263759" alt="Visitor Count" className="h-6" />
             </div>
           </div>
 
